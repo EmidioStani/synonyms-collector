@@ -1,0 +1,433 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/vocab/vann/> .
+@prefix ns2: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://www.w3.org/2001/02pd/rec54#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+
+<http://data.europa.eu/88u/dataset/atu-type> a rdfs:Class ;
+    rdfs:label "Administrative Territorial Unit"@en .
+
+<http://data.europa.eu/m8g/ImageObject> a owl:Class ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/PublicOrganisation> a owl:Class ;
+    ns1:usageNote """Organizations which exist to provide services for its citizens and companies are called Public Organizations. The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships.
+<br/><br/>
+This definition is consistent with the more detailed definition of a "public sector body" as given in the PSI Directive: "the State, regional or local authorities, bodies governed by public law and associations formed by one or several such authorities or one or several such bodies governed by public law". It further defines a body governed by public law as any body "(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character; and (b) having legal personality; and (c) financed, for the most part by the State, or regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities or by other bodies governed by public law"."""@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:subClassOf org:Organization .
+
+<http://data.europa.eu/m8g/ReferenceFramework> a owl:Class ;
+    ns1:usageNote "Usual Reference Frameworks are legal and non-legal specifications. Examples include procedures, tendering legislation, etc."@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range foaf:Document .
+
+<http://data.europa.eu/m8g/email> a owl:DatatypeProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/frequency> a owl:ObjectProperty ;
+    ns1:usageNote "It is recommended to use the frequency from an existing vocabulary like the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency\">Frequency</a> from the Publications Office."@en ;
+    rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdfs:Literal .
+
+<http://example.com/label/Knowledge--Classification-of> a ns2:Label ;
+    ns3:source "lcsh"@en ;
+    ns2:literalForm "Knowledge, Classification of"@en .
+
+<http://example.com/label/Taxonomy> a ns2:Label ;
+    ns3:source "stw"@en ;
+    ns2:literalForm "Taxonomy"@en .
+
+<http://example.com/label/UDC> a ns2:Label ;
+    ns3:source "eurovoc"@en ;
+    ns2:literalForm "UDC"@en .
+
+<http://example.com/label/adjacent> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "adjacent"@en .
+
+<http://example.com/label/aim> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wiktionary"@en,
+        "wordnet"@en ;
+    ns2:literalForm "aim"@en .
+
+<http://example.com/label/assortment> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "wordnet"@en ;
+    ns2:literalForm "assortment"@en .
+
+<http://example.com/label/attribute> a ns2:Label ;
+    ns3:source "altervista"@en ;
+    ns2:literalForm "attribute"@en .
+
+<http://example.com/label/belonging-to> a ns2:Label ;
+    ns3:source "datamuse"@en ;
+    ns2:literalForm "belonging to"@en .
+
+<http://example.com/label/categorisation> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "categorisation"@en .
+
+<http://example.com/label/categorization> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "categorization"@en .
+
+<http://example.com/label/close> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "close"@en .
+
+<http://example.com/label/compartmentalisation> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "wordnet"@en ;
+    ns2:literalForm "compartmentalisation"@en .
+
+<http://example.com/label/compartmentalization> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "wordnet"@en ;
+    ns2:literalForm "compartmentalization"@en .
+
+<http://example.com/label/design> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "design"@en .
+
+<http://example.com/label/determination> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wiktionary"@en,
+        "wordnet"@en ;
+    ns2:literalForm "determination"@en .
+
+<http://example.com/label/following> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "following"@en .
+
+<http://example.com/label/function> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "function"@en .
+
+<http://example.com/label/future> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "future"@en .
+
+<http://example.com/label/goal> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "goal"@en .
+
+<http://example.com/label/heading> a ns2:Label ;
+    ns3:source "eurovoc"@en ;
+    ns2:literalForm "heading"@en .
+
+<http://example.com/label/included-in> a ns2:Label ;
+    ns3:source "datamuse"@en ;
+    ns2:literalForm "included in"@en .
+
+<http://example.com/label/incoming> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "incoming"@en .
+
+<http://example.com/label/intent> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "intent"@en .
+
+<http://example.com/label/intention> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wiktionary"@en,
+        "wordnet"@en ;
+    ns2:literalForm "intention"@en .
+
+<http://example.com/label/kind> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "kind"@en .
+
+<http://example.com/label/matter> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "matter"@en .
+
+<http://example.com/label/object> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "object"@en .
+
+<http://example.com/label/part-of> a ns2:Label ;
+    ns3:source "datamuse"@en ;
+    ns2:literalForm "part of"@en .
+
+<http://example.com/label/plan> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "plan"@en .
+
+<http://example.com/label/propose> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "propose"@en .
+
+<http://example.com/label/purport> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "purport"@en .
+
+<http://example.com/label/reason> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "reason"@en .
+
+<http://example.com/label/resolution> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "resolution"@en .
+
+<http://example.com/label/resolve> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "resolve"@en .
+
+<http://example.com/label/role> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "role"@en .
+
+<http://example.com/label/side-by-side> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "side by side"@en .
+
+<http://example.com/label/sort> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "sort"@en .
+
+<http://example.com/label/sorting> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "sorting"@en .
+
+<http://example.com/label/spacial> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "spacial"@en .
+
+<http://example.com/label/subject> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "subject"@en .
+
+<http://example.com/label/succeeding> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "succeeding"@en .
+
+<http://example.com/label/target> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "target"@en .
+
+<http://example.com/label/topic> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "topic"@en .
+
+<http://example.com/label/type> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "type"@en .
+
+<http://example.com/label/universal-decimal-classification> a ns2:Label ;
+    ns3:source "eurovoc"@en ;
+    ns2:literalForm "universal decimal classification"@en .
+
+<http://example.com/label/use> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns2:literalForm "use"@en .
+
+<http://example.com/label/variety> a ns2:Label ;
+    ns3:source "wiktionary"@en ;
+    ns2:literalForm "variety"@en .
+
+<http://example.com/label/verbal-description> a ns2:Label ;
+    ns3:source "altervista"@en,
+        "datamuse"@en ;
+    ns2:literalForm "verbal description"@en .
+
+<http://example.com/label/verbal_description> a ns2:Label ;
+    ns3:source "wordnet"@en ;
+    ns2:literalForm "verbal_description"@en .
+
+dc:description a rdf:Property ;
+    rdfs:label "description"@en ;
+    ns2:altLabel <http://example.com/label/kind>,
+        <http://example.com/label/sort>,
+        <http://example.com/label/type>,
+        <http://example.com/label/variety>,
+        <http://example.com/label/verbal-description>,
+        <http://example.com/label/verbal_description> .
+
+dc:spatial a rdf:Property ;
+    rdfs:label "spatial"@en ;
+    ns2:altLabel <http://example.com/label/attribute>,
+        <http://example.com/label/spacial> .
+
+xhv:next a rdf:Property ;
+    rdfs:label "next"@en ;
+    ns2:altLabel <http://example.com/label/adjacent>,
+        <http://example.com/label/close>,
+        <http://example.com/label/following>,
+        <http://example.com/label/future>,
+        <http://example.com/label/incoming>,
+        <http://example.com/label/side-by-side>,
+        <http://example.com/label/succeeding> .
+
+xhv:prev a rdf:Property ;
+    rdfs:label "prev"@en .
+
+skos:altLabel a rdf:Property ;
+    rdfs:label "alternative label"@en .
+
+skos:prefLabel a rdf:Property ;
+    rdfs:label "preferred label"@en .
+
+org:classification a rdf:Property ;
+    rdfs:label "classification"@en ;
+    ns2:altLabel <http://example.com/label/Knowledge--Classification-of>,
+        <http://example.com/label/Taxonomy>,
+        <http://example.com/label/UDC>,
+        <http://example.com/label/assortment>,
+        <http://example.com/label/categorisation>,
+        <http://example.com/label/categorization>,
+        <http://example.com/label/compartmentalisation>,
+        <http://example.com/label/compartmentalization>,
+        <http://example.com/label/heading>,
+        <http://example.com/label/sorting>,
+        <http://example.com/label/universal-decimal-classification> .
+
+org:hasMember a rdf:Property ;
+    rdfs:label "has member"@en .
+
+org:hasSubOrganization a rdf:Property ;
+    rdfs:label "has sub organization"@en .
+
+org:memberOf a rdf:Property ;
+    rdfs:label "member of"@en ;
+    ns2:altLabel <http://example.com/label/belonging-to>,
+        <http://example.com/label/included-in>,
+        <http://example.com/label/part-of> .
+
+org:purpose a rdf:Property ;
+    rdfs:label "purpose"@en ;
+    ns2:altLabel <http://example.com/label/aim>,
+        <http://example.com/label/design>,
+        <http://example.com/label/determination>,
+        <http://example.com/label/function>,
+        <http://example.com/label/goal>,
+        <http://example.com/label/intent>,
+        <http://example.com/label/intention>,
+        <http://example.com/label/matter>,
+        <http://example.com/label/object>,
+        <http://example.com/label/plan>,
+        <http://example.com/label/propose>,
+        <http://example.com/label/purport>,
+        <http://example.com/label/reason>,
+        <http://example.com/label/resolution>,
+        <http://example.com/label/resolve>,
+        <http://example.com/label/role>,
+        <http://example.com/label/subject>,
+        <http://example.com/label/target>,
+        <http://example.com/label/topic>,
+        <http://example.com/label/use> .
+
+org:subOrganizationOf a rdf:Property ;
+    rdfs:label "sub organization of"@en .
+
+<http://data.europa.eu/m8g/ContactPoint> a owl:Class ;
+    ns1:usageNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g> a owl:Ontology ;
+    rdfs:label "core-public-organisation"@en,
+        "core-public-organisation"@nl ;
+    dc:contributor [ a foaf:Person ;
+            foaf:firstName "Seth" ;
+            foaf:lastName "van Hooland" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ] ;
+    dc:issued "TODO" ;
+    dc:license <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>,
+        "https://creativecommons.org/licenses/by/4.0/" ;
+    dc:mediator [ foaf:homepage <https://semic.eu> ;
+            foaf:name "Semantic Interoperability Community (SEMIC)" ] ;
+    rdfs:seeAlso <http://data.europa.eu/88u/dataset/atu-type>,
+        dc:description,
+        dc:spatial,
+        xhv:next,
+        xhv:prev,
+        skos:altLabel,
+        skos:prefLabel,
+        org:classification,
+        org:hasMember,
+        org:hasSubOrganization,
+        org:memberOf,
+        org:purpose,
+        org:subOrganizationOf ;
+    ns4:editor [ a foaf:Person ;
+            foaf:firstName "Pavlina" ;
+            foaf:lastName "Fragkou" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Michiel" ;
+            foaf:lastName "De Keyzer" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Alexandre" ;
+            foaf:lastName "Beaufays" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Florian" ;
+            foaf:lastName "Barthelemy" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Bert" ;
+            foaf:lastName "Van Nuffelen" ;
+            schemas:affiliation [ foaf:name "TenForce" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Emidio" ;
+            foaf:lastName "Stani" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Dimitri" ;
+            foaf:lastName "Schepers" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    foaf:maker [ a foaf:Person ;
+            foaf:firstName "Core Vocabularies Working Group" ] .
+

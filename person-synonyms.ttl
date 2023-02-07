@@ -1,0 +1,193 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://www.w3.org/2001/02pd/rec54#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+
+<http://www.w3.org/ns/person#Person> a rdfs:Class ;
+    rdfs:label "Person"@en ;
+    ns1:altLabel "human"@en,
+        "individual"@en,
+        "mortal"@en,
+        "natural person"@en,
+        "somebody"@en,
+        "someone"@en,
+        "soul"@en .
+
+<https://data.europa.eu/m8g> a owl:Ontology ;
+    rdfs:label "core-person-voc"@en,
+        "core-person-voc"@nl ;
+    dc:contributor [ a foaf:Person ;
+            foaf:firstName "Seth" ;
+            foaf:lastName "van Hooland" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ] ;
+    dc:issued "TODO" ;
+    dc:license <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>,
+        "https://creativecommons.org/licenses/by/4.0/" ;
+    dc:mediator [ foaf:homepage <https://semic.eu> ;
+            foaf:name "Semantic Interoperability Community (SEMIC)" ] ;
+    rdfs:seeAlso <http://data.europa.eu/m8g/birthDate>,
+        <http://data.europa.eu/m8g/deathDate>,
+        <http://data.europa.eu/m8g/domicile>,
+        <http://data.europa.eu/m8g/gender>,
+        <http://data.europa.eu/m8g/matronymicName>,
+        dc:alternative,
+        dc:citizenship,
+        dc:identifier,
+        <http://www.w3.org/ns/person#Person>,
+        <http://www.w3.org/ns/person#birthName>,
+        <http://www.w3.org/ns/person#countryOfBirth>,
+        <http://www.w3.org/ns/person#countryOfDeath>,
+        <http://www.w3.org/ns/person#patronymicName>,
+        <http://www.w3.org/ns/person#placeOfBirth>,
+        <http://www.w3.org/ns/person#placeOfDeath>,
+        foaf:familyName,
+        foaf:givenName,
+        foaf:name ;
+    ns2:editor [ a foaf:Person ;
+            foaf:firstName "Pavlina" ;
+            foaf:lastName "Fragkou" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Michiel" ;
+            foaf:lastName "De Keyzer" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Alexandre" ;
+            foaf:lastName "Beaufays" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Florian" ;
+            foaf:lastName "Barthelemy" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Bert" ;
+            foaf:lastName "Van Nuffelen" ;
+            schemas:affiliation [ foaf:name "TenForce" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Emidio" ;
+            foaf:lastName "Stani" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Dimitri" ;
+            foaf:lastName "Schepers" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    foaf:maker [ a foaf:Person ;
+            foaf:firstName "Core Vocabularies Working Group" ] .
+
+<http://data.europa.eu/m8g/birthDate> a rdf:Property ;
+    rdfs:label "date of birth"@en ;
+    ns1:altLabel "birthday"@en .
+
+<http://data.europa.eu/m8g/deathDate> a rdf:Property ;
+    rdfs:label "date of death"@en ;
+    ns1:altLabel "death date"@en,
+        "expiration date"@en .
+
+<http://data.europa.eu/m8g/domicile> a rdf:Property ;
+    rdfs:label "domicile"@en ;
+    ns1:altLabel "Residence (Law)"@en,
+        "abode"@en,
+        "domiciliate"@en,
+        "dwelling"@en,
+        "dwelling house"@en,
+        "dwelling_house"@en,
+        "habitation"@en,
+        "home"@en,
+        "legal residence"@en,
+        "legal_residence"@en,
+        "reside"@en,
+        "shack"@en .
+
+<http://data.europa.eu/m8g/gender> a rdf:Property ;
+    rdfs:label "gender"@en ;
+    ns1:altLabel "gendersex"@en,
+        "genre"@en,
+        "grammatical gender"@en,
+        "grammatical_gender"@en,
+        "sex"@en,
+        "sexuality"@en,
+        "voice"@en .
+
+<http://data.europa.eu/m8g/matronymicName> a rdf:Property ;
+    rdfs:label "matronymic name"@en .
+
+dc:alternative a rdf:Property ;
+    rdfs:label "alternative name"@en ;
+    ns1:altLabel "alias"@en,
+        "pseudonym"@en .
+
+dc:citizenship a rdf:Property ;
+    rdfs:label "citizenship"@en ;
+    ns1:altLabel "Birthright citizenship"@en,
+        "Citizenship (International law)"@en,
+        "Citizenship--Law and legislation"@en,
+        "National citizenship"@en,
+        "Nationality (Citizenship)"@en,
+        "Naturalization"@en,
+        "citizenhood"@en,
+        "freedom_of_the_city"@en,
+        "freemanship"@en .
+
+dc:identifier a rdf:Property ;
+    rdfs:label "identifier"@en .
+
+<http://www.w3.org/ns/person#birthName> a rdf:Property ;
+    rdfs:label "birth name"@en .
+
+<http://www.w3.org/ns/person#countryOfBirth> a rdf:Property ;
+    rdfs:label "country of birth"@en,
+        "residency"@en ;
+    ns1:altLabel "abidance"@en,
+        "birthplace"@en,
+        "homeland"@en,
+        "native country"@en,
+        "residence"@en .
+
+<http://www.w3.org/ns/person#countryOfDeath> a rdf:Property ;
+    rdfs:label "country of death"@en .
+
+<http://www.w3.org/ns/person#patronymicName> a rdf:Property ;
+    rdfs:label "patronymic name"@en .
+
+<http://www.w3.org/ns/person#placeOfBirth> a rdf:Property ;
+    rdfs:label "place of birth"@en ;
+    ns1:altLabel "birthplace"@en .
+
+<http://www.w3.org/ns/person#placeOfDeath> a rdf:Property ;
+    rdfs:label "place of death"@en ;
+    ns1:altLabel "cemetery"@en,
+        "graveyard"@en .
+
+foaf:familyName a rdf:Property ;
+    rdfs:label "family name (surname)"@en ;
+    ns1:altLabel "cognomen"@en,
+        "darlington"@en,
+        "documentation"@en,
+        "mom"@en,
+        "names"@en,
+        "patronymic"@en,
+        "sis"@en,
+        "sonny"@en,
+        "surname"@en,
+        "surnames"@en,
+        "vancouver"@en .
+
+foaf:givenName a rdf:Property ;
+    rdfs:label "given name (forename)"@en ;
+    ns1:altLabel "doe"@en,
+        "first"@en,
+        "forename"@en,
+        "fox"@en,
+        "names"@en,
+        "otis"@en,
+        "reb"@en,
+        "surname"@en .
+
+foaf:name a rdf:Property ;
+    rdfs:label "full name"@en ;
+    ns1:altLabel "surname"@en .
+

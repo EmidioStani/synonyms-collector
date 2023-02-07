@@ -1,0 +1,457 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://www.w3.org/2001/02pd/rec54#> .
+@prefix ns4: <http://purl.org/vocab/vann/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schemas: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://data.europa.eu/m8g/accessibility> a owl:DatatypeProperty ;
+    ns4:usageNote "This property may be provided in multiple languages with multiple instances of the accessibility property."@en ;
+    rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdf:langString .
+
+<http://data.europa.eu/m8g/audience> a owl:ObjectProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/contactPage> a owl:ObjectProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range foaf:Document .
+
+<http://data.europa.eu/m8g/email> a owl:DatatypeProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/eventNumber> a owl:DatatypeProperty ;
+    ns4:usageNote "Examples could be the ''4th\" or \"2022\"."@en ;
+    rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdf:langString .
+
+<http://data.europa.eu/m8g/format> a owl:ObjectProperty ;
+    ns4:usageNote "Examples include conference call, physical meeting or hybrid."@en ;
+    rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/frequency> a owl:ObjectProperty ;
+    ns4:usageNote "It is recommended to use the frequency from an existing vocabulary like the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency\">Frequency</a> from the Publications Office."@en ;
+    rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/registrationPage> a owl:ObjectProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range foaf:Document .
+
+<http://data.europa.eu/m8g/role> a owl:ObjectProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/Participation> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range skos:Concept .
+
+<http://data.europa.eu/m8g/telephone> a owl:DatatypeProperty ;
+    rdfs:domain <http://data.europa.eu/m8g/ContactPoint> ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
+    rdfs:range rdfs:Literal .
+
+<http://data.europa.eu/m8g/Participation> a owl:Class ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/hasNextEvent> a rdf:Property ;
+    rdfs:label "has next event"@en .
+
+<http://data.europa.eu/m8g/hasPreviousEvent> a rdf:Property ;
+    rdfs:label "has previous event"@en .
+
+<http://data.europa.eu/m8g/parentEvent> a rdf:Property ;
+    rdfs:label "parent event"@en .
+
+<http://data.europa.eu/m8g/subEvent> a rdf:Property ;
+    rdfs:label "sub event"@en ;
+    ns1:altLabel <http://example.com/label/ancillary-event>,
+        <http://example.com/label/side-event> .
+
+<http://example.com/label/Language--New-words--slang--etc--> a ns1:Label ;
+    ns2:source "lcsh"@en ;
+    ns1:literalForm "Language (New words, slang, etc.)"@en .
+
+<http://example.com/label/ancillary-event> a ns1:Label ;
+    ns2:source "datamuse"@en ;
+    ns1:literalForm "ancillary event"@en .
+
+<http://example.com/label/championship> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "championship"@en .
+
+<http://example.com/label/claim> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "claim"@en .
+
+<http://example.com/label/computer_language> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "computer_language"@en .
+
+<http://example.com/label/deed> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "deed"@en .
+
+<http://example.com/label/deed-of-conveyance> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "deed of conveyance"@en .
+
+<http://example.com/label/deed_of_conveyance> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "deed_of_conveyance"@en .
+
+<http://example.com/label/entitle> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "entitle"@en .
+
+<http://example.com/label/form-of-address> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "form of address"@en .
+
+<http://example.com/label/form_of_address> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "form_of_address"@en .
+
+<http://example.com/label/home-page> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "home page"@en .
+
+<http://example.com/label/home_page> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "home_page"@en .
+
+<http://example.com/label/issue> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "issue"@en .
+
+<http://example.com/label/kind> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "kind"@en .
+
+<http://example.com/label/linguistic-communication> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "linguistic communication"@en .
+
+<http://example.com/label/linguistic-process> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "linguistic process"@en .
+
+<http://example.com/label/linguistic_communication> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "linguistic_communication"@en .
+
+<http://example.com/label/linguistic_process> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "linguistic_process"@en .
+
+<http://example.com/label/lyric> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "lyric"@en .
+
+<http://example.com/label/machine_language> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "machine_language"@en .
+
+<http://example.com/label/matter> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "matter"@en .
+
+<http://example.com/label/nomenclature> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "nomenclature"@en .
+
+<http://example.com/label/oral-communication> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "oral communication"@en .
+
+<http://example.com/label/oral_communication> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "oral_communication"@en .
+
+<http://example.com/label/programming_language> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "programming_language"@en .
+
+<http://example.com/label/rubric> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "wordnet"@en ;
+    ns1:literalForm "rubric"@en .
+
+<http://example.com/label/side-event> a ns1:Label ;
+    ns2:source "datamuse"@en ;
+    ns1:literalForm "side event"@en .
+
+<http://example.com/label/sort> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "sort"@en .
+
+<http://example.com/label/speech> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "speech"@en .
+
+<http://example.com/label/speech-communication> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "speech communication"@en .
+
+<http://example.com/label/speech_communication> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "speech_communication"@en .
+
+<http://example.com/label/spoken-communication> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "spoken communication"@en .
+
+<http://example.com/label/spoken-language> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "spoken language"@en .
+
+<http://example.com/label/spoken_communication> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "spoken_communication"@en .
+
+<http://example.com/label/spoken_language> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "spoken_language"@en .
+
+<http://example.com/label/statute-title> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "statute title"@en .
+
+<http://example.com/label/statute_title> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "statute_title"@en .
+
+<http://example.com/label/style> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "style"@en .
+
+<http://example.com/label/subject> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wiktionary"@en,
+        "wordnet"@en ;
+    ns1:literalForm "subject"@en .
+
+<http://example.com/label/subject_area> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "subject_area"@en .
+
+<http://example.com/label/terminology> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "terminology"@en .
+
+<http://example.com/label/theme> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "theme"@en .
+
+<http://example.com/label/title-of-respect> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "title of respect"@en .
+
+<http://example.com/label/title_of_respect> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "title_of_respect"@en .
+
+<http://example.com/label/type> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "type"@en .
+
+<http://example.com/label/variety> a ns1:Label ;
+    ns2:source "wiktionary"@en ;
+    ns1:literalForm "variety"@en .
+
+<http://example.com/label/verbal-description> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en ;
+    ns1:literalForm "verbal description"@en .
+
+<http://example.com/label/verbal_description> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "verbal_description"@en .
+
+<http://example.com/label/voice-communication> a ns1:Label ;
+    ns2:source "altervista"@en ;
+    ns1:literalForm "voice communication"@en .
+
+<http://example.com/label/voice_communication> a ns1:Label ;
+    ns2:source "wordnet"@en ;
+    ns1:literalForm "voice_communication"@en .
+
+<http://example.com/label/words> a ns1:Label ;
+    ns2:source "altervista"@en,
+        "datamuse"@en,
+        "wordnet"@en ;
+    ns1:literalForm "words"@en .
+
+dc:description a rdf:Property ;
+    rdfs:label "description"@en ;
+    ns1:altLabel <http://example.com/label/kind>,
+        <http://example.com/label/sort>,
+        <http://example.com/label/type>,
+        <http://example.com/label/variety>,
+        <http://example.com/label/verbal-description>,
+        <http://example.com/label/verbal_description> .
+
+dc:identifier a rdf:Property ;
+    rdfs:label "identifier"@en .
+
+dc:language a rdf:Property ;
+    rdfs:label "language"@en ;
+    ns1:altLabel <http://example.com/label/Language--New-words--slang--etc-->,
+        <http://example.com/label/computer_language>,
+        <http://example.com/label/linguistic-communication>,
+        <http://example.com/label/linguistic-process>,
+        <http://example.com/label/linguistic_communication>,
+        <http://example.com/label/linguistic_process>,
+        <http://example.com/label/lyric>,
+        <http://example.com/label/machine_language>,
+        <http://example.com/label/nomenclature>,
+        <http://example.com/label/oral-communication>,
+        <http://example.com/label/oral_communication>,
+        <http://example.com/label/programming_language>,
+        <http://example.com/label/speech>,
+        <http://example.com/label/speech-communication>,
+        <http://example.com/label/speech_communication>,
+        <http://example.com/label/spoken-communication>,
+        <http://example.com/label/spoken-language>,
+        <http://example.com/label/spoken_communication>,
+        <http://example.com/label/spoken_language>,
+        <http://example.com/label/terminology>,
+        <http://example.com/label/voice-communication>,
+        <http://example.com/label/voice_communication>,
+        <http://example.com/label/words> .
+
+dc:subject a rdf:Property ;
+    rdfs:label "topic"@en ;
+    ns1:altLabel <http://example.com/label/issue>,
+        <http://example.com/label/matter>,
+        <http://example.com/label/subject>,
+        <http://example.com/label/subject_area>,
+        <http://example.com/label/theme> .
+
+dc:title a rdf:Property ;
+    rdfs:label "title"@en ;
+    ns1:altLabel <http://example.com/label/championship>,
+        <http://example.com/label/claim>,
+        <http://example.com/label/deed>,
+        <http://example.com/label/deed-of-conveyance>,
+        <http://example.com/label/deed_of_conveyance>,
+        <http://example.com/label/entitle>,
+        <http://example.com/label/form-of-address>,
+        <http://example.com/label/form_of_address>,
+        <http://example.com/label/rubric>,
+        <http://example.com/label/statute-title>,
+        <http://example.com/label/statute_title>,
+        <http://example.com/label/style>,
+        <http://example.com/label/title-of-respect>,
+        <http://example.com/label/title_of_respect> .
+
+dc:type a rdf:Property ;
+    rdfs:label "event type"@en .
+
+foaf:homepage a rdf:Property ;
+    rdfs:label "homepage"@en ;
+    ns1:altLabel <http://example.com/label/home-page>,
+        <http://example.com/label/home_page> .
+
+<http://data.europa.eu/m8g/ContactPoint> a owl:Class ;
+    ns4:usageNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g/PublicEvent> a owl:Class ;
+    rdfs:isDefinedBy <http://data.europa.eu/m8g> .
+
+<http://data.europa.eu/m8g> a owl:Ontology ;
+    rdfs:label "core-public-event"@en,
+        "core-public-event"@nl ;
+    dc:contributor [ a foaf:Person ;
+            foaf:firstName "Seth" ;
+            foaf:lastName "van Hooland" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ] ;
+    dc:issued "TODO" ;
+    dc:license <https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic>,
+        "https://creativecommons.org/licenses/by/4.0/" ;
+    dc:mediator [ foaf:homepage <https://semic.eu> ;
+            foaf:name "Semantic Interoperability Community (SEMIC)" ] ;
+    rdfs:seeAlso <http://data.europa.eu/m8g/hasNextEvent>,
+        <http://data.europa.eu/m8g/hasPreviousEvent>,
+        <http://data.europa.eu/m8g/parentEvent>,
+        <http://data.europa.eu/m8g/subEvent>,
+        dc:description,
+        dc:identifier,
+        dc:language,
+        dc:subject,
+        dc:title,
+        dc:type,
+        foaf:homepage ;
+    ns3:editor [ a foaf:Person ;
+            foaf:firstName "Pavlina" ;
+            foaf:lastName "Fragkou" ;
+            schemas:affiliation [ foaf:name "European Commission" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Michiel" ;
+            foaf:lastName "De Keyzer" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Alexandre" ;
+            foaf:lastName "Beaufays" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Florian" ;
+            foaf:lastName "Barthelemy" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Bert" ;
+            foaf:lastName "Van Nuffelen" ;
+            schemas:affiliation [ foaf:name "TenForce" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Emidio" ;
+            foaf:lastName "Stani" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ],
+        [ a foaf:Person ;
+            foaf:firstName "Dimitri" ;
+            foaf:lastName "Schepers" ;
+            schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    foaf:maker [ a foaf:Person ;
+            foaf:firstName "Core Vocabularies Working Group" ] .
+
