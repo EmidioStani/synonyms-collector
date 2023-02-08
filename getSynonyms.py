@@ -70,6 +70,68 @@ def synonymsFromSPARQLEndpoint(endpoint, term):
 
     return resultslist
 
+def synonymsFromSPARQLEndpointLOV(endpoint, term):
+    sparql = SPARQLWrapper(endpoint)
+    sparql.setQuery("""
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        SELECT ?found
+        WHERE
+            {
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term skos:prefLabel ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?termlabel) = '""" + term.lower() + """'@en || lcase(?termlabel) = '""" + term.lower() + """')
+                        FILTER(lang(?altlabel)="en" || lang(?altlabel)="")
+                        BIND (?altlabel as ?found)
+                    }
+                }
+                UNION
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term skos:prefLabel ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?altlabel) = '""" + term.lower() + """'@en || lcase(?altlabel) = '""" + term.lower() + """' )
+                        FILTER(lang(?termlabel)="en" || lang(?termlabel)="")
+                        BIND (?termlabel as ?found)
+                    }
+                }
+                UNION
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term rdfs:label ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?termlabel) = '""" + term.lower() + """'@en || lcase(?termlabel) = '""" + term.lower() + """')
+                        FILTER(lang(?altlabel)="en" || lang(?altlabel)="")
+                        BIND (?altlabel as ?found)
+                    }
+                }
+                UNION
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term rdfs:label ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?altlabel) = '""" + term.lower() + """'@en || lcase(?altlabel) = '""" + term.lower() + """' )
+                        FILTER(lang(?termlabel)="en" || lang(?termlabel)="")
+                        BIND (?termlabel as ?found)
+                    }
+                }
+            }
+        """)
+
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    resultslist = []
+    for result in results["results"]["bindings"]:
+        label = result["found"]["value"]
+        resultslist.append(label)
+
+    return resultslist
 def synonymsDatamuse(term):
     api = datamuse.Datamuse()
     response = api.words(ml=term.lower())
@@ -168,7 +230,10 @@ with tqdm(total=length) as pbar:
         repository_list = config['input']['repository']
         for repository in repository_list:
             pbar.set_description("Searching " + c + " in " + repository['name'])
-            syns = synonymsFromSPARQLEndpoint(repository['endpoint'], c)
+            if (repository['name'] == "Lov"):
+                syns = synonymsFromSPARQLEndpointLOV(repository['endpoint'], c)
+            else:
+                syns = synonymsFromSPARQLEndpoint(repository['endpoint'], c)
             if(syns):
                 for label in syns:
                     # wiktionary and wordnet use _ to separate words
