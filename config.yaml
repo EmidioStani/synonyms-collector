@@ -3,28 +3,28 @@ input:
     name: "core-public-event-ap.ttl"
     format: "ttl"
   repository:
-    - name: "wordnet"
+    - name: "Wordnet"
       endpoint: "http://localhost:7200/repositories/wordnet-synonyms"
-    - name: "unesco"
+    - name: "Unesco"
       endpoint: "http://localhost:7200/repositories/unesco"
-    - name: "fibo"
+    - name: "Fibo"
       endpoint: "http://localhost:7200/repositories/fibo"
-    - name: "stw"
+    - name: "Stw"
       endpoint: "http://localhost:7200/repositories/stw"
-    - name: "lcsh"
+    - name: "Lcsh"
       endpoint: "http://localhost:7200/repositories/lcsh"
-    - name: "wiktionary"
+    - name: "Wiktionary"
       endpoint: "http://localhost:7200/repositories/wiktionary-synonyms"
-    - name: "eurovoc"
+    - name: "Eurovoc"
       endpoint: "http://localhost:7200/repositories/eurovoc-synonyms"
   api:
     altervista: 
-      enpoint: "http://thesaurus.altervista.org/thesaurus/v1"
+      endpoint: "http://thesaurus.altervista.org/thesaurus/v1"
       key: "Kdnuiqz85LO7gGIHdGZf"
-alternative: "skos"
+alternative: "skosxl"
 skosxl:
   baseuri: "http://example.com/label/"
 output:
   file: 
-    name: "cpev-synonyms.ttl"
+    name: "cpev-synonyms-skosxl3.ttl"
     format: "ttl"

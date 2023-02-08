@@ -5,7 +5,6 @@
 .. moduleauthor:: Emidio Stani <emidio.s.stani@pwc.com>
 """
 
-
 import argparse
 import re
 from re import finditer
@@ -33,21 +32,40 @@ def synonymsFromSPARQLEndpoint(endpoint, term):
     sparql.setQuery("""
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        SELECT ?altlabel
-        WHERE {
-            ?term rdf:type skos:Concept .
-            ?term skos:prefLabel ?termlabel .
-            ?term skos:altLabel ?altlabel .
-            FILTER (lcase(?termlabel) = '""" + term.lower() + """'@en)
-            FILTER(lang(?altlabel)="en" || lang(?altlabel)="")
-        }
+        SELECT ?found
+        WHERE
+            {
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term rdf:type skos:Concept .
+                        ?term skos:prefLabel ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?termlabel) = '""" + term.lower() + """'@en)
+                        FILTER(lang(?altlabel)="en" || lang(?altlabel)="")
+                        BIND (?altlabel as ?found)
+                    }
+                }
+                UNION
+                {
+                    SELECT ?found
+                    WHERE {
+                        ?term rdf:type skos:Concept .
+                        ?term skos:prefLabel ?termlabel .
+                        ?term skos:altLabel ?altlabel .
+                        FILTER (lcase(?altlabel) = '""" + term.lower() + """'@en)
+                        FILTER(lang(?termlabel)="en" || lang(?termlabel)="")
+                        BIND (?termlabel as ?found)
+                    }
+                }
+            }
         """)
 
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
     resultslist = []
     for result in results["results"]["bindings"]:
-        label = result["altlabel"]["value"]
+        label = result["found"]["value"]
         resultslist.append(label)
 
     return resultslist
@@ -63,8 +81,7 @@ def synonymsDatamuse(term):
             resultslist.append(word)
     return resultslist
 
-def synonymsAltervista(term, apikey):
-    endpoint = 'http://thesaurus.altervista.org/thesaurus/v1'
+def synonymsAltervista(term, endpoint, apikey):
     word = '?word=' + term
     language = '&language=' + 'en_US'
     key = '&key=' + apikey
@@ -140,13 +157,13 @@ with tqdm(total=length) as pbar:
         syns1 = synonymsDatamuse(c)
         if(syns1):
             for z in syns1:
-                mylist.append([z,"datamuse"])
+                mylist.append([z,"Datamuse"])
 
         pbar.set_description("Searching %s in Altervista..." % c)
-        syns9 = synonymsAltervista(c, ALTERVISTA_KEY)
+        syns9 = synonymsAltervista(c, config['input']['api']['altervista']['endpoint'], ALTERVISTA_KEY)
         if(syns9):
             for label in syns9:
-                mylist.append([str(label),"altervista"])
+                mylist.append([str(label),"Altervista"])
 
         repository_list = config['input']['repository']
         for repository in repository_list:
@@ -154,10 +171,12 @@ with tqdm(total=length) as pbar:
             syns = synonymsFromSPARQLEndpoint(repository['endpoint'], c)
             if(syns):
                 for label in syns:
+                    # wiktionary and wordnet use _ to separate words
+                    label = label.replace("_"," ")
                     mylist.append([str(label),repository['name']])
 
         for element in mylist:
-            labelURI = element[0].replace(" ","-").replace("(","-").replace(")","-").replace(",","-").replace("*","-").replace("&amp;","-").replace(".","-").replace("'","-")
+            labelURI = element[0].replace("_","-").replace(" ","-").replace("(","-").replace(")","-").replace(",","-").replace("*","-").replace("&amp;","-").replace(".","-").replace("'","-")
             if(config['alternative'] == "skos"):
                 g.add((a, SKOS.altLabel, Literal(element[0], lang="en")))
             else:
