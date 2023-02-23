@@ -105,6 +105,25 @@ def getWikidataMapping(endpoint, label):
     results = sparql.query().convert()
     return results
 
+def getLovMapping(endpoint, label):
+    sparql = SPARQLWrapper(endpoint)
+    sparql.setQuery("""
+        CONSTRUCT {
+            ?subject ?relation ?schema  .
+            ?subject rdfs:label ?label .
+        }
+        WHERE {
+            ?subject rdfs:label ?label .
+            FILTER (?label = '""" + label + """'@en) .
+            ?subject ?relation ?schema  .
+            FILTER (strstarts(str(?schema), "http://schema.org/")  || strstarts(str(?schema), "https://schema.org/"))
+        }
+    """)
+
+    sparql.setReturnFormat(TURTLE)
+    results = sparql.query().convert()
+    return results
+
 def get_config(file):
     my_path = Path(__file__).resolve()  # resolve to get rid of any symlinks
     config_path = my_path.parent / file
@@ -179,8 +198,20 @@ with tqdm(total=length) as pbar:
         wikidataGraph =  getWikidataMapping(endpoint, label)
        
         for sub, obj, pred in wikidataGraph:
-            print("Found: " + str(pred))
+            # print("Found: " + str(pred))
             outputGraph.add((sub,obj,pred))
 
+        """
+        pbar.set_description("Searching %s in LOV..." % label)
+        endpoint = config['input']['mapping']['lov']
+        # print(endpoint)
+        lovMapping =  getLovMapping(endpoint, label)
+        lovGraph = Graph()
+        lovGraph.parse(data=lovMapping, format="turtle")
+       
+        for sub, obj, pred in lovGraph:
+            print("Found: " + str(pred))
+            outputGraph.add((sub,obj,pred))
+        """
 
 outputGraph.serialize(destination=OUTPUT_FILE, format=config['output']['file']['format'])
