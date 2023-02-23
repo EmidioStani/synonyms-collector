@@ -10,5 +10,5 @@ input:
     lov: "http://localhost:7200/repositories/lov"
 output:
   file: 
-    name: "cpev-ind-synonyms-skos.ttl"
+    name: "cpev-indirect-mapping.ttl"
     format: "ttl"
