@@ -1,7 +1,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns1: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
 @prefix ns3: <http://www.w3.org/2001/02pd/rec54#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,12 +10,17 @@
 
 <http://www.w3.org/ns/person#Person> a rdfs:Class ;
     rdfs:label "Person"@en ;
-    ns2:altLabel <http://example.com/label/human>,
+    ns1:altLabel <http://example.com/label/Ningbonese>,
+        <http://example.com/label/Polack>,
+        <http://example.com/label/human>,
+        <http://example.com/label/human-being>,
+        <http://example.com/label/hyphenate>,
         <http://example.com/label/individual>,
         <http://example.com/label/mortal>,
         <http://example.com/label/natural-person>,
         <http://example.com/label/somebody>,
         <http://example.com/label/someone>,
+        <http://example.com/label/sort>,
         <http://example.com/label/soul> .
 
 <https://data.europa.eu/m8g> a owl:Ontology ;
@@ -76,373 +81,441 @@
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    ns1:altLabel <http://example.com/label/core-person-voc> ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 
 <http://data.europa.eu/m8g/birthDate> a rdf:Property ;
     rdfs:label "date of birth"@en ;
-    ns2:altLabel <http://example.com/label/birthday> .
+    ns1:altLabel <http://example.com/label/Birth>,
+        <http://example.com/label/birth-date>,
+        <http://example.com/label/birthday> .
 
 <http://data.europa.eu/m8g/deathDate> a rdf:Property ;
     rdfs:label "date of death"@en ;
-    ns2:altLabel <http://example.com/label/death-date>,
+    ns1:altLabel <http://example.com/label/death-date>,
         <http://example.com/label/expiration-date> .
 
 <http://data.europa.eu/m8g/domicile> a rdf:Property ;
     rdfs:label "domicile"@en ;
-    ns2:altLabel <http://example.com/label/Residence--Law->,
+    ns1:altLabel <http://example.com/label/Residence--Law->,
         <http://example.com/label/abode>,
         <http://example.com/label/domiciliate>,
         <http://example.com/label/dwelling>,
         <http://example.com/label/dwelling-house>,
-        <http://example.com/label/dwelling_house>,
         <http://example.com/label/habitation>,
         <http://example.com/label/home>,
         <http://example.com/label/legal-residence>,
-        <http://example.com/label/legal_residence>,
         <http://example.com/label/reside>,
         <http://example.com/label/shack> .
 
 <http://data.europa.eu/m8g/gender> a rdf:Property ;
     rdfs:label "gender"@en ;
-    ns2:altLabel <http://example.com/label/gendersex>,
+    ns1:altLabel <http://example.com/label/gendersex>,
         <http://example.com/label/genre>,
         <http://example.com/label/grammatical-gender>,
-        <http://example.com/label/grammatical_gender>,
         <http://example.com/label/sex>,
         <http://example.com/label/sexuality>,
         <http://example.com/label/voice> .
 
 <http://data.europa.eu/m8g/matronymicName> a rdf:Property ;
-    rdfs:label "matronymic name"@en .
+    rdfs:label "matronymic name"@en ;
+    ns1:altLabel <http://example.com/label/matronymic-name> .
 
-<http://example.com/label/Birthright-citizenship> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "Birthright citizenship"@en .
+<http://example.com/label/Birth> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Birth"@en .
 
-<http://example.com/label/Citizenship--International-law-> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "Citizenship (International law)"@en .
+<http://example.com/label/Birthplace> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Birthplace"@en .
 
-<http://example.com/label/Citizenship--Law-and-legislation> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "Citizenship--Law and legislation"@en .
+<http://example.com/label/Birthright-citizenship> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Birthright citizenship"@en .
 
-<http://example.com/label/National-citizenship> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "National citizenship"@en .
+<http://example.com/label/Citizenship--International-law-> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Citizenship (International law)"@en .
 
-<http://example.com/label/Nationality--Citizenship-> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "Nationality (Citizenship)"@en .
+<http://example.com/label/Citizenship--Law-and-legislation> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Citizenship--Law and legislation"@en .
 
-<http://example.com/label/Naturalization> a ns2:Label ;
-    ns1:source "stw"@en ;
-    ns2:literalForm "Naturalization"@en .
+<http://example.com/label/National-citizenship> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "National citizenship"@en .
 
-<http://example.com/label/Residence--Law-> a ns2:Label ;
-    ns1:source "eurovoc"@en,
-        "lcsh"@en ;
-    ns2:literalForm "Residence (Law)"@en .
+<http://example.com/label/Nationality> a ns1:Label ;
+    ns2:source "Unesco"@en ;
+    ns1:literalForm "Nationality"@en .
 
-<http://example.com/label/abidance> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en ;
-    ns2:literalForm "abidance"@en .
+<http://example.com/label/Nationality--Citizenship-> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Nationality (Citizenship)"@en .
 
-<http://example.com/label/abode> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en ;
-    ns2:literalForm "abode"@en .
+<http://example.com/label/Naturalization> a ns1:Label ;
+    ns2:source "Stw"@en ;
+    ns1:literalForm "Naturalization"@en .
 
-<http://example.com/label/alias> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "alias"@en .
+<http://example.com/label/Ningbonese> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "Ningbonese"@en .
 
-<http://example.com/label/birthday> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "birthday"@en .
+<http://example.com/label/Polack> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "Polack"@en .
 
-<http://example.com/label/cemetery> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "cemetery"@en .
+<http://example.com/label/Residence--Law-> a ns1:Label ;
+    ns2:source "Lcsh"@en ;
+    ns1:literalForm "Residence (Law)"@en .
 
-<http://example.com/label/citizenhood> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "citizenhood"@en .
+<http://example.com/label/abidance> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "abidance"@en .
 
-<http://example.com/label/cognomen> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "cognomen"@en .
+<http://example.com/label/abode> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "abode"@en .
 
-<http://example.com/label/darlington> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "darlington"@en .
+<http://example.com/label/alias> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "alias"@en .
 
-<http://example.com/label/death-date> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "death date"@en .
+<http://example.com/label/birth-date> a ns1:Label ;
+    ns2:source "Fibo"@en ;
+    ns1:literalForm "birth date"@en .
 
-<http://example.com/label/documentation> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "documentation"@en .
+<http://example.com/label/birth-name> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "birth name"@en .
 
-<http://example.com/label/doe> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "doe"@en .
+<http://example.com/label/birth-place> a ns1:Label ;
+    ns2:source "Fibo"@en ;
+    ns1:literalForm "birth place"@en .
 
-<http://example.com/label/domiciliate> a ns2:Label ;
-    ns1:source "altervista"@en ;
-    ns2:literalForm "domiciliate"@en .
+<http://example.com/label/birthday> a ns1:Label ;
+    ns2:source "Datamuse"@en,
+        "Fibo"@en ;
+    ns1:literalForm "birthday"@en .
 
-<http://example.com/label/dwelling> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "dwelling"@en .
+<http://example.com/label/cemetery> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "cemetery"@en .
 
-<http://example.com/label/dwelling-house> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en ;
-    ns2:literalForm "dwelling house"@en .
+<http://example.com/label/citizenhood> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "citizenhood"@en .
 
-<http://example.com/label/dwelling_house> a ns2:Label ;
-    ns1:source "wordnet"@en ;
-    ns2:literalForm "dwelling_house"@en .
+<http://example.com/label/cognomen> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "cognomen"@en .
 
-<http://example.com/label/expiration-date> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "expiration date"@en .
+<http://example.com/label/core-person-voc> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "core-person-voc"@en .
 
-<http://example.com/label/first> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "first"@en .
+<http://example.com/label/country-of-death> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "country of death"@en .
 
-<http://example.com/label/forename> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "forename"@en .
+<http://example.com/label/darlington> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "darlington"@en .
 
-<http://example.com/label/fox> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "fox"@en .
+<http://example.com/label/death-date> a ns1:Label ;
+    ns2:source "Datamuse"@en,
+        "Fibo"@en ;
+    ns1:literalForm "death date"@en .
 
-<http://example.com/label/freedom_of_the_city> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "freedom_of_the_city"@en .
+<http://example.com/label/documentation> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "documentation"@en .
 
-<http://example.com/label/freemanship> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "freemanship"@en .
+<http://example.com/label/doe> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "doe"@en .
 
-<http://example.com/label/gendersex> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "gendersex"@en .
+<http://example.com/label/domiciliate> a ns1:Label ;
+    ns2:source "Altervista"@en ;
+    ns1:literalForm "domiciliate"@en .
 
-<http://example.com/label/genre> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "genre"@en .
+<http://example.com/label/dwelling> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "dwelling"@en .
 
-<http://example.com/label/grammatical-gender> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en ;
-    ns2:literalForm "grammatical gender"@en .
+<http://example.com/label/dwelling-house> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "dwelling house"@en .
 
-<http://example.com/label/grammatical_gender> a ns2:Label ;
-    ns1:source "wordnet"@en ;
-    ns2:literalForm "grammatical_gender"@en .
+<http://example.com/label/expiration-date> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "expiration date"@en .
 
-<http://example.com/label/graveyard> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "graveyard"@en .
+<http://example.com/label/first> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "first"@en .
 
-<http://example.com/label/habitation> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "habitation"@en .
+<http://example.com/label/forename> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "forename"@en .
 
-<http://example.com/label/home> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "home"@en .
+<http://example.com/label/fox> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "fox"@en .
 
-<http://example.com/label/homeland> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "homeland"@en .
+<http://example.com/label/freedom-of-the-city> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "freedom of the city"@en .
 
-<http://example.com/label/human> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "human"@en .
+<http://example.com/label/freemanship> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "freemanship"@en .
 
-<http://example.com/label/individual> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "individual"@en .
+<http://example.com/label/gendersex> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "gendersex"@en .
 
-<http://example.com/label/legal-residence> a ns2:Label ;
-    ns1:source "altervista"@en ;
-    ns2:literalForm "legal residence"@en .
+<http://example.com/label/genre> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "genre"@en .
 
-<http://example.com/label/legal_residence> a ns2:Label ;
-    ns1:source "wordnet"@en ;
-    ns2:literalForm "legal_residence"@en .
+<http://example.com/label/grammatical-gender> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "grammatical gender"@en .
 
-<http://example.com/label/mom> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "mom"@en .
+<http://example.com/label/graveyard> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "graveyard"@en .
 
-<http://example.com/label/mortal> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "mortal"@en .
+<http://example.com/label/habitation> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "habitation"@en .
 
-<http://example.com/label/native-country> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "native country"@en .
+<http://example.com/label/home> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wiktionary"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "home"@en .
 
-<http://example.com/label/natural-person> a ns2:Label ;
-    ns1:source "fibo"@en ;
-    ns2:literalForm "natural person"@en .
+<http://example.com/label/homeland> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "homeland"@en .
 
-<http://example.com/label/otis> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "otis"@en .
+<http://example.com/label/human> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "human"@en .
 
-<http://example.com/label/patronymic> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "patronymic"@en .
+<http://example.com/label/human-being> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "human being"@en .
 
-<http://example.com/label/pseudonym> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "pseudonym"@en .
+<http://example.com/label/hyphenate> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "hyphenate"@en .
 
-<http://example.com/label/reb> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "reb"@en .
+<http://example.com/label/identifier> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "identifier"@en .
 
-<http://example.com/label/reside> a ns2:Label ;
-    ns1:source "altervista"@en ;
-    ns2:literalForm "reside"@en .
+<http://example.com/label/individual> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "individual"@en .
 
-<http://example.com/label/residence> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "residence"@en .
+<http://example.com/label/legal-residence> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "legal residence"@en .
 
-<http://example.com/label/sex> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wiktionary"@en,
-        "wordnet"@en ;
-    ns2:literalForm "sex"@en .
+<http://example.com/label/matronymic-name> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "matronymic name"@en .
 
-<http://example.com/label/sexuality> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "sexuality"@en .
+<http://example.com/label/mom> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "mom"@en .
 
-<http://example.com/label/shack> a ns2:Label ;
-    ns1:source "altervista"@en ;
-    ns2:literalForm "shack"@en .
+<http://example.com/label/mortal> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "mortal"@en .
 
-<http://example.com/label/sis> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "sis"@en .
+<http://example.com/label/nationality> a ns1:Label ;
+    ns2:source "Eurovoc"@en,
+        "Wiktionary"@en ;
+    ns1:literalForm "nationality"@en .
 
-<http://example.com/label/somebody> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "somebody"@en .
+<http://example.com/label/native-country> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "native country"@en .
 
-<http://example.com/label/someone> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "someone"@en .
+<http://example.com/label/natural-person> a ns1:Label ;
+    ns2:source "Fibo"@en ;
+    ns1:literalForm "natural person"@en .
 
-<http://example.com/label/sonny> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "sonny"@en .
+<http://example.com/label/otis> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "otis"@en .
 
-<http://example.com/label/soul> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
-    ns2:literalForm "soul"@en .
+<http://example.com/label/patronymic> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "patronymic"@en .
 
-<http://example.com/label/surnames> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "surnames"@en .
+<http://example.com/label/patronymic-name> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "patronymic name"@en .
 
-<http://example.com/label/vancouver> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "vancouver"@en .
+<http://example.com/label/pseudonym> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "pseudonym"@en .
 
-<http://example.com/label/voice> a ns2:Label ;
-    ns1:source "wiktionary"@en ;
-    ns2:literalForm "voice"@en .
+<http://example.com/label/reb> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "reb"@en .
+
+<http://example.com/label/reside> a ns1:Label ;
+    ns2:source "Altervista"@en ;
+    ns1:literalForm "reside"@en .
+
+<http://example.com/label/residence> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "residence"@en .
+
+<http://example.com/label/sex> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wiktionary"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "sex"@en .
+
+<http://example.com/label/sexuality> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "sexuality"@en .
+
+<http://example.com/label/shack> a ns1:Label ;
+    ns2:source "Altervista"@en ;
+    ns1:literalForm "shack"@en .
+
+<http://example.com/label/sis> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "sis"@en .
+
+<http://example.com/label/somebody> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "somebody"@en .
+
+<http://example.com/label/someone> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "someone"@en .
+
+<http://example.com/label/sonny> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "sonny"@en .
+
+<http://example.com/label/sort> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "sort"@en .
+
+<http://example.com/label/soul> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
+    ns1:literalForm "soul"@en .
+
+<http://example.com/label/surnames> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "surnames"@en .
+
+<http://example.com/label/vancouver> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "vancouver"@en .
+
+<http://example.com/label/voice> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "voice"@en .
 
 dc:alternative a rdf:Property ;
     rdfs:label "alternative name"@en ;
-    ns2:altLabel <http://example.com/label/alias>,
+    ns1:altLabel <http://example.com/label/alias>,
         <http://example.com/label/pseudonym> .
 
 dc:citizenship a rdf:Property ;
     rdfs:label "citizenship"@en ;
-    ns2:altLabel <http://example.com/label/Birthright-citizenship>,
+    ns1:altLabel <http://example.com/label/Birthright-citizenship>,
         <http://example.com/label/Citizenship--International-law->,
         <http://example.com/label/Citizenship--Law-and-legislation>,
         <http://example.com/label/National-citizenship>,
+        <http://example.com/label/Nationality>,
         <http://example.com/label/Nationality--Citizenship->,
         <http://example.com/label/Naturalization>,
         <http://example.com/label/citizenhood>,
-        <http://example.com/label/freedom_of_the_city>,
-        <http://example.com/label/freemanship> .
+        <http://example.com/label/freedom-of-the-city>,
+        <http://example.com/label/freemanship>,
+        <http://example.com/label/nationality> .
 
 dc:identifier a rdf:Property ;
-    rdfs:label "identifier"@en .
+    rdfs:label "identifier"@en ;
+    ns1:altLabel <http://example.com/label/identifier> .
 
 <http://www.w3.org/ns/person#birthName> a rdf:Property ;
-    rdfs:label "birth name"@en .
+    rdfs:label "birth name"@en ;
+    ns1:altLabel <http://example.com/label/birth-name> .
 
 <http://www.w3.org/ns/person#countryOfBirth> a rdf:Property ;
     rdfs:label "country of birth"@en,
         "residency"@en ;
-    ns2:altLabel <http://example.com/label/abidance>,
+    ns1:altLabel <http://example.com/label/abidance>,
         <http://example.com/label/birthplace>,
         <http://example.com/label/homeland>,
         <http://example.com/label/native-country>,
         <http://example.com/label/residence> .
 
 <http://www.w3.org/ns/person#countryOfDeath> a rdf:Property ;
-    rdfs:label "country of death"@en .
+    rdfs:label "country of death"@en ;
+    ns1:altLabel <http://example.com/label/country-of-death> .
 
 <http://www.w3.org/ns/person#patronymicName> a rdf:Property ;
-    rdfs:label "patronymic name"@en .
+    rdfs:label "patronymic name"@en ;
+    ns1:altLabel <http://example.com/label/patronymic-name> .
 
 <http://www.w3.org/ns/person#placeOfBirth> a rdf:Property ;
     rdfs:label "place of birth"@en ;
-    ns2:altLabel <http://example.com/label/birthplace> .
+    ns1:altLabel <http://example.com/label/Birthplace>,
+        <http://example.com/label/birth-place>,
+        <http://example.com/label/birthplace> .
 
 <http://www.w3.org/ns/person#placeOfDeath> a rdf:Property ;
     rdfs:label "place of death"@en ;
-    ns2:altLabel <http://example.com/label/cemetery>,
+    ns1:altLabel <http://example.com/label/cemetery>,
         <http://example.com/label/graveyard> .
 
 foaf:familyName a rdf:Property ;
     rdfs:label "family name (surname)"@en ;
-    ns2:altLabel <http://example.com/label/cognomen>,
+    ns1:altLabel <http://example.com/label/cognomen>,
         <http://example.com/label/darlington>,
         <http://example.com/label/documentation>,
         <http://example.com/label/mom>,
@@ -456,7 +529,7 @@ foaf:familyName a rdf:Property ;
 
 foaf:givenName a rdf:Property ;
     rdfs:label "given name (forename)"@en ;
-    ns2:altLabel <http://example.com/label/doe>,
+    ns1:altLabel <http://example.com/label/doe>,
         <http://example.com/label/first>,
         <http://example.com/label/forename>,
         <http://example.com/label/fox>,
@@ -467,18 +540,18 @@ foaf:givenName a rdf:Property ;
 
 foaf:name a rdf:Property ;
     rdfs:label "full name"@en ;
-    ns2:altLabel <http://example.com/label/surname> .
+    ns1:altLabel <http://example.com/label/surname> .
 
-<http://example.com/label/birthplace> a ns2:Label ;
-    ns1:source "altervista"@en,
-        "datamuse"@en ;
-    ns2:literalForm "birthplace"@en .
+<http://example.com/label/birthplace> a ns1:Label ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
+    ns1:literalForm "birthplace"@en .
 
-<http://example.com/label/names> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "names"@en .
+<http://example.com/label/names> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "names"@en .
 
-<http://example.com/label/surname> a ns2:Label ;
-    ns1:source "datamuse"@en ;
-    ns2:literalForm "surname"@en .
+<http://example.com/label/surname> a ns1:Label ;
+    ns2:source "Datamuse"@en ;
+    ns1:literalForm "surname"@en .
 

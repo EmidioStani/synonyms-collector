@@ -182,7 +182,7 @@ def get_config(file):
         config = yaml.load(config_file, Loader=yaml.FullLoader)
     return config
 
-config = get_config("config.yaml")
+config = get_config("configSynonyms.yaml")
 ALTERVISTA_KEY = config['input']['api']['altervista']['key']
 INPUT_FILE = config['input']['file']['name']
 OUTPUT_FILE = config['output']['file']['name']
@@ -239,7 +239,8 @@ with tqdm(total=length) as pbar:
                     # wiktionary and wordnet use _ to separate words
                     label = label.replace("_"," ")
                     mylist.append([str(label),repository['name']])
-
+        if len(mylist) == 0:
+            mylist.append([c,"origin"])   
         for element in mylist:
             labelURI = element[0].replace("_","-").replace(" ","-").replace("(","-").replace(")","-").replace(",","-").replace("*","-").replace("&amp;","-").replace(".","-").replace("'","-")
             if(config['alternative'] == "skos"):

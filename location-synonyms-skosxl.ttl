@@ -2,8 +2,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/vocab/vann/> .
-@prefix ns4: <http://www.w3.org/2001/02pd/rec54#> .
+@prefix ns3: <http://www.w3.org/2001/02pd/rec54#> .
+@prefix ns4: <http://purl.org/vocab/vann/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,18 +13,19 @@
 
 <http://www.w3.org/ns/locn#Address> a rdfs:Class ;
     rdfs:label "Address"@en ;
-    ns1:altLabel <http://example.com/label/accost>,
+    ns1:altLabel <http://example.com/label/Geographical-Address>,
+        <http://example.com/label/Postal-Address>,
+        <http://example.com/label/accost>,
         <http://example.com/label/call>,
         <http://example.com/label/come-up-to>,
         <http://example.com/label/computer-address>,
-        <http://example.com/label/computer_address>,
         <http://example.com/label/cover>,
         <http://example.com/label/deal>,
         <http://example.com/label/destination>,
         <http://example.com/label/direct>,
         <http://example.com/label/handle>,
         <http://example.com/label/name-and-address>,
-        <http://example.com/label/name_and_address>,
+        <http://example.com/label/oration>,
         <http://example.com/label/plow>,
         <http://example.com/label/reference>,
         <http://example.com/label/savoir-faire>,
@@ -36,10 +37,11 @@
         <http://example.com/label/work> .
 
 <http://www.w3.org/ns/locn#Geometry> a rdfs:Class ;
-    rdfs:label "Geometry"@en .
+    rdfs:label "Geometry"@en ;
+    ns1:altLabel <http://example.com/label/mathematics> .
 
 <http://data.europa.eu/m8g/address> a owl:ObjectProperty ;
-    ns3:usageNote """Asserting the address relationship implies that the
+    ns4:usageNote """Asserting the address relationship implies that the
  Resource has an Address."""@en ;
     rdfs:domain rdfs:Resource ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
@@ -52,19 +54,19 @@
     rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/coordinates> a owl:DatatypeProperty ;
-    ns3:usageNote "Can be expressed as longitude, latitude, elevation."@en ;
+    ns4:usageNote "Can be expressed as longitude, latitude, elevation."@en ;
     rdfs:domain <http://www.w3.org/ns/locn#Geometry> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range xsd:string .
 
 <http://data.europa.eu/m8g/crs> a owl:DatatypeProperty ;
-    ns3:usageNote "Can be a coordinate-based local, regional or global system used to locate geographical entities."@en ;
+    ns4:usageNote "Can be a coordinate-based local, regional or global system used to locate geographical entities."@en ;
     rdfs:domain <http://www.w3.org/ns/locn#Geometry> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range xsd:anyURI .
 
 <http://data.europa.eu/m8g/geometryType> a owl:ObjectProperty ;
-    ns3:usageNote "Can be a point, line or polygon."@en ;
+    ns4:usageNote "Can be a point, line or polygon."@en ;
     rdfs:domain <http://www.w3.org/ns/locn#Geometry> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range skos:Concept .
@@ -75,13 +77,13 @@
     rdfs:range xsd:string .
 
 <http://data.europa.eu/m8g/level> a owl:ObjectProperty ;
-    ns3:usageNote "Some recommended codelists from the EU Publications Office and Eurostat include: <a href=\"https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu\">Administrative Territorial Units (ATU)</a>, <a href=\"https://ec.europa.eu/eurostat/web/nuts/background\">NUTS</a> and <a href=\"https://ec.europa.eu/eurostat/web/nuts/local-administrative-units\">Local Administrative Units (LAU)</a>. The first arrondissement of Paris is for example expressed as \"http://publications.europa.eu/resource/authority/atu/FRA\\_AR\\_PAR01\" in the ATU controlled vocabulary."@en ;
+    ns4:usageNote "Some recommended codelists from the EU Publications Office and Eurostat include: <a href=\"https://op.europa.eu/fr/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu\">Administrative Territorial Units (ATU)</a>, <a href=\"https://ec.europa.eu/eurostat/web/nuts/background\">NUTS</a> and <a href=\"https://ec.europa.eu/eurostat/web/nuts/local-administrative-units\">Local Administrative Units (LAU)</a>. The first arrondissement of Paris is for example expressed as \"http://publications.europa.eu/resource/authority/atu/FRA\\_AR\\_PAR01\" in the ATU controlled vocabulary."@en ;
     rdfs:domain <http://data.europa.eu/m8g/AdminUnit> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/location> a owl:ObjectProperty ;
-    ns3:usageNote "Asserting the location relationship implies only that the domain has some connection to a Location in time or space. It does not imply that the Resource is necessarily at that Location at the time when the assertion is made."@en ;
+    ns4:usageNote "Asserting the location relationship implies only that the domain has some connection to a Location in time or space. It does not imply that the Resource is necessarily at that Location at the time when the assertion is made."@en ;
     rdfs:domain rdfs:Resource ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range dc:Location .
@@ -93,170 +95,304 @@
 
 <http://data.europa.eu/m8g/adminUnit> a rdf:Property ;
     rdfs:label "administrative unit"@en ;
-    ns1:altLabel <http://example.com/label/administrative-body>,
+    ns1:altLabel <http://example.com/label/Administrative-Division>,
+        <http://example.com/label/Administrative-Entity>,
+        <http://example.com/label/Administrative-Unit>,
+        <http://example.com/label/Country-Subdivision>,
+        <http://example.com/label/Geopolitical-Division>,
+        <http://example.com/label/Subnational-Entity>,
+        <http://example.com/label/administrative-body>,
         <http://example.com/label/administrative-district> .
 
+<http://example.com/label/Administrative-Division> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Administrative Division"@en .
+
+<http://example.com/label/Administrative-Entity> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Administrative Entity"@en .
+
+<http://example.com/label/Administrative-Unit> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Administrative Unit"@en .
+
+<http://example.com/label/Country-Subdivision> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Country Subdivision"@en .
+
+<http://example.com/label/Eircode> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Eircode"@en .
+
+<http://example.com/label/Geographical-Address> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Geographical Address"@en .
+
+<http://example.com/label/Geopolitical-Division> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Geopolitical Division"@en .
+
+<http://example.com/label/PIN-Code> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "PIN Code"@en .
+
+<http://example.com/label/Post-Code> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Post Code"@en .
+
+<http://example.com/label/Postal-Address> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Postal Address"@en .
+
+<http://example.com/label/Postal-Code> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Postal Code"@en .
+
+<http://example.com/label/Postcode> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Postcode"@en .
+
+<http://example.com/label/Subnational-Entity> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "Subnational Entity"@en .
+
+<http://example.com/label/ZIP-Code> a ns1:Label ;
+    ns2:source "Lov"@en ;
+    ns1:literalForm "ZIP Code"@en .
+
 <http://example.com/label/accost> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "accost"@en .
 
+<http://example.com/label/address-area> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "address area"@en .
+
+<http://example.com/label/address-id> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "address id"@en .
+
 <http://example.com/label/administrative-body> a ns1:Label ;
-    ns2:source "altervista"@en ;
+    ns2:source "Altervista"@en ;
     ns1:literalForm "administrative body"@en .
 
 <http://example.com/label/administrative-district> a ns1:Label ;
-    ns2:source "eurovoc"@en ;
+    ns2:source "Eurovoc"@en ;
     ns1:literalForm "administrative district"@en .
 
+<http://example.com/label/administrative-unit-level-1> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "administrative unit level 1"@en .
+
+<http://example.com/label/administrative-unit-level-2> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "administrative unit level 2"@en .
+
 <http://example.com/label/call> a ns1:Label ;
-    ns2:source "altervista"@en ;
+    ns2:source "Altervista"@en ;
     ns1:literalForm "call"@en .
 
 <http://example.com/label/come-up-to> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "come up to"@en .
 
 <http://example.com/label/computer-address> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
     ns1:literalForm "computer address"@en .
 
-<http://example.com/label/computer_address> a ns1:Label ;
-    ns2:source "wordnet"@en ;
-    ns1:literalForm "computer_address"@en .
+<http://example.com/label/core-location> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "core-location"@en .
 
 <http://example.com/label/cover> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "cover"@en .
 
 <http://example.com/label/deal> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "deal"@en .
 
 <http://example.com/label/destination> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
     ns1:literalForm "destination"@en .
 
 <http://example.com/label/direct> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "direct"@en .
 
+<http://example.com/label/full-address> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "full address"@en .
+
+<http://example.com/label/gml> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "gml"@en .
+
 <http://example.com/label/handle> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "handle"@en .
 
+<http://example.com/label/locator-designator> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "locator designator"@en .
+
+<http://example.com/label/locator-name> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "locator name"@en .
+
+<http://example.com/label/mathematics> a ns1:Label ;
+    ns2:source "Eurovoc"@en ;
+    ns1:literalForm "mathematics"@en .
+
 <http://example.com/label/name-and-address> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
     ns1:literalForm "name and address"@en .
 
-<http://example.com/label/name_and_address> a ns1:Label ;
-    ns2:source "wordnet"@en ;
-    ns1:literalForm "name_and_address"@en .
+<http://example.com/label/oration> a ns1:Label ;
+    ns2:source "Wiktionary"@en ;
+    ns1:literalForm "oration"@en .
 
 <http://example.com/label/plow> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "plow"@en .
 
+<http://example.com/label/post-name> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "post name"@en .
+
+<http://example.com/label/post-office-box> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "post office box"@en .
+
 <http://example.com/label/postal-code> a ns1:Label ;
-    ns2:source "datamuse"@en ;
+    ns2:source "Datamuse"@en ;
     ns1:literalForm "postal code"@en .
 
 <http://example.com/label/reference> a ns1:Label ;
-    ns2:source "wordnet"@en ;
+    ns2:source "Wordnet"@en ;
     ns1:literalForm "reference"@en .
 
 <http://example.com/label/savoir-faire> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
     ns1:literalForm "savoir-faire"@en .
 
 <http://example.com/label/speak> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "speak"@en .
 
 <http://example.com/label/speak-to> a ns1:Label ;
-    ns2:source "datamuse"@en ;
+    ns2:source "Datamuse"@en ;
     ns1:literalForm "speak to"@en .
 
 <http://example.com/label/speech> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en,
-        "wordnet"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en,
+        "Wordnet"@en ;
     ns1:literalForm "speech"@en .
 
+<http://example.com/label/thoroughfare> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "thoroughfare"@en .
+
 <http://example.com/label/treat> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "treat"@en .
 
 <http://example.com/label/turn-to> a ns1:Label ;
-    ns2:source "altervista"@en,
-        "datamuse"@en ;
+    ns2:source "Altervista"@en,
+        "Datamuse"@en ;
     ns1:literalForm "turn to"@en .
 
+<http://example.com/label/wkt> a ns1:Label ;
+    ns2:source "origin"@en ;
+    ns1:literalForm "wkt"@en .
+
 <http://example.com/label/work> a ns1:Label ;
-    ns2:source "datamuse"@en ;
+    ns2:source "Datamuse"@en ;
     ns1:literalForm "work"@en .
 
 <http://example.com/label/zip-code> a ns1:Label ;
-    ns2:source "datamuse"@en ;
+    ns2:source "Datamuse"@en ;
     ns1:literalForm "zip code"@en .
 
 <http://www.opengis.net/ont/geosparql#asGML> a rdf:Property ;
-    rdfs:label "gml"@en .
+    rdfs:label "gml"@en ;
+    ns1:altLabel <http://example.com/label/gml> .
 
 <http://www.opengis.net/ont/geosparql#asWKT> a rdf:Property ;
-    rdfs:label "wkt"@en .
+    rdfs:label "wkt"@en ;
+    ns1:altLabel <http://example.com/label/wkt> .
 
 <http://www.w3.org/ns/locn#addressArea> a rdf:Property ;
-    rdfs:label "address area"@en .
+    rdfs:label "address area"@en ;
+    ns1:altLabel <http://example.com/label/address-area> .
 
 <http://www.w3.org/ns/locn#addressId> a rdf:Property ;
-    rdfs:label "address ID"@en .
+    rdfs:label "address ID"@en ;
+    ns1:altLabel <http://example.com/label/address-id> .
 
 <http://www.w3.org/ns/locn#adminUnitL1> a rdf:Property ;
-    rdfs:label "administrative unit level 1"@en .
+    rdfs:label "administrative unit level 1"@en ;
+    ns1:altLabel <http://example.com/label/administrative-unit-level-1> .
 
 <http://www.w3.org/ns/locn#adminUnitL2> a rdf:Property ;
-    rdfs:label "administrative unit level 2"@en .
+    rdfs:label "administrative unit level 2"@en ;
+    ns1:altLabel <http://example.com/label/administrative-unit-level-2> .
 
 <http://www.w3.org/ns/locn#fullAddress> a rdf:Property ;
-    rdfs:label "full address"@en .
+    rdfs:label "full address"@en ;
+    ns1:altLabel <http://example.com/label/full-address> .
 
 <http://www.w3.org/ns/locn#locatorDesignator> a rdf:Property ;
-    rdfs:label "locator designator"@en .
+    rdfs:label "locator designator"@en ;
+    ns1:altLabel <http://example.com/label/locator-designator> .
 
 <http://www.w3.org/ns/locn#locatorName> a rdf:Property ;
-    rdfs:label "locator name"@en .
+    rdfs:label "locator name"@en ;
+    ns1:altLabel <http://example.com/label/locator-name> .
 
 <http://www.w3.org/ns/locn#poBox> a rdf:Property ;
-    rdfs:label "post office box"@en .
+    rdfs:label "post office box"@en ;
+    ns1:altLabel <http://example.com/label/post-office-box> .
 
 <http://www.w3.org/ns/locn#postCode> a rdf:Property ;
     rdfs:label "post code"@en ;
-    ns1:altLabel <http://example.com/label/postal-code>,
+    ns1:altLabel <http://example.com/label/Eircode>,
+        <http://example.com/label/PIN-Code>,
+        <http://example.com/label/Post-Code>,
+        <http://example.com/label/Postal-Code>,
+        <http://example.com/label/Postcode>,
+        <http://example.com/label/ZIP-Code>,
+        <http://example.com/label/postal-code>,
         <http://example.com/label/zip-code> .
 
 <http://www.w3.org/ns/locn#postName> a rdf:Property ;
-    rdfs:label "post name"@en .
+    rdfs:label "post name"@en ;
+    ns1:altLabel <http://example.com/label/post-name> .
 
 <http://www.w3.org/ns/locn#thoroughfare> a rdf:Property ;
-    rdfs:label "thoroughfare"@en .
+    rdfs:label "thoroughfare"@en ;
+    ns1:altLabel <http://example.com/label/thoroughfare> .
 
 <http://data.europa.eu/m8g/AdminUnit> a owl:Class ;
-    ns3:usageNote "This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text."@en ;
+    ns4:usageNote "This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text."@en ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g> a owl:Ontology ;
@@ -287,7 +423,7 @@
         <http://www.w3.org/ns/locn#postCode>,
         <http://www.w3.org/ns/locn#postName>,
         <http://www.w3.org/ns/locn#thoroughfare> ;
-    ns4:editor [ a foaf:Person ;
+    ns3:editor [ a foaf:Person ;
             foaf:firstName "Pavlina" ;
             foaf:lastName "Fragkou" ;
             schemas:affiliation [ foaf:name "European Commission" ] ],
@@ -315,6 +451,7 @@
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    ns1:altLabel <http://example.com/label/core-location> ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 

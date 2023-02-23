@@ -11,18 +11,19 @@
 
 <http://www.w3.org/ns/locn#Address> a rdfs:Class ;
     rdfs:label "Address"@en ;
-    skos:altLabel "accost"@en,
+    skos:altLabel "Geographical Address"@en,
+        "Postal Address"@en,
+        "accost"@en,
         "call"@en,
         "come up to"@en,
         "computer address"@en,
-        "computer_address"@en,
         "cover"@en,
         "deal"@en,
         "destination"@en,
         "direct"@en,
         "handle"@en,
         "name and address"@en,
-        "name_and_address"@en,
+        "oration"@en,
         "plow"@en,
         "reference"@en,
         "savoir-faire"@en,
@@ -34,7 +35,8 @@
         "work"@en .
 
 <http://www.w3.org/ns/locn#Geometry> a rdfs:Class ;
-    rdfs:label "Geometry"@en .
+    rdfs:label "Geometry"@en ;
+    skos:altLabel "mathematics"@en .
 
 <http://data.europa.eu/m8g/address> a owl:ObjectProperty ;
     ns1:usageNote """Asserting the address relationship implies that the
@@ -91,7 +93,13 @@
 
 <http://data.europa.eu/m8g/adminUnit> a rdf:Property ;
     rdfs:label "administrative unit"@en ;
-    skos:altLabel "administrative body"@en,
+    skos:altLabel "Administrative Division"@en,
+        "Administrative Entity"@en,
+        "Administrative Unit"@en,
+        "Country Subdivision"@en,
+        "Geopolitical Division"@en,
+        "Subnational Entity"@en,
+        "administrative body"@en,
         "administrative district"@en .
 
 <http://www.opengis.net/ont/geosparql#asGML> a rdf:Property ;
@@ -126,7 +134,13 @@
 
 <http://www.w3.org/ns/locn#postCode> a rdf:Property ;
     rdfs:label "post code"@en ;
-    skos:altLabel "postal code"@en,
+    skos:altLabel "Eircode"@en,
+        "PIN Code"@en,
+        "Post Code"@en,
+        "Postal Code"@en,
+        "Postcode"@en,
+        "ZIP Code"@en,
+        "postal code"@en,
         "zip code"@en .
 
 <http://www.w3.org/ns/locn#postName> a rdf:Property ;

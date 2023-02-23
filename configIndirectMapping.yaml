@@ -1,0 +1,13 @@
+input:
+  file: 
+    name: "core-public-event-ap.ttl"
+    format: "ttl"
+  mapping:
+    dcschema: "http://localhost:7200/repositories/mapping-dc-schema"
+    wdschema: "http://localhost:7200/repositories/mapping-wd-schema"
+    dbpedia: "https://dbpedia.org/sparql"
+    wikidata: "https://query.wikidata.org/sparql"
+output:
+  file: 
+    name: "cpev-ind-synonyms-skos.ttl"
+    format: "ttl"

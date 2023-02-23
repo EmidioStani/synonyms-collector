@@ -1,0 +1,2779 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/PrivatelyHeldCompany> a skos:Concept ;
+    skos:altLabel "closed corporation",
+        "privately held corporation" ;
+    skos:prefLabel "privately held company"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/hasIssuedCapital> a skos:Concept ;
+    skos:altLabel "has subscribed capital",
+        "has subscribed share capital" ;
+    skos:prefLabel "has issued capital"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/FunctionalEntities/CooperativeSociety> a skos:Concept ;
+    skos:altLabel "cooperative" ;
+    skos:prefLabel "cooperative society"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/NorthernEuropeGovernmentEntitiesAndJurisdictions/GovernmentOfTheKingdomOfDenmark> a skos:Concept ;
+    skos:altLabel "Danish government"@en ;
+    skos:prefLabel "Government of the Kingdom of Denmark"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/SouthernEuropeGovernmentEntitiesAndJurisdictions/GovernmentOfTheHolySee> a skos:Concept ;
+    skos:altLabel "Government of the See of Rome" ;
+    skos:prefLabel "Government of the Holy See"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/GovernmentOfScotland> a skos:Concept ;
+    skos:altLabel "Scottish government" ;
+    skos:prefLabel "Government of Scotland"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/GovernmentOfTheIsleOfMan> a skos:Concept ;
+    skos:altLabel "Manx Government" ;
+    skos:prefLabel "Government of the Isle of Man"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/GovernmentOfTheUnitedKingdom> a skos:Concept ;
+    skos:altLabel "British government" ;
+    skos:prefLabel "Government of the United Kingdom"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/IsleOfManEntity> a skos:Concept ;
+    skos:altLabel "Manx entity" ;
+    skos:prefLabel "Isle of Man entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/EuropeanJurisdiction/UKGovernmentEntitiesAndJurisdictions/NationalAssemblyForWales> a skos:Concept ;
+    skos:altLabel "Welsh Assembly"@en ;
+    skos:prefLabel "National Assembly for Wales"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/MunicipalEntity> a skos:Concept ;
+    skos:altLabel "municipality" ;
+    skos:prefLabel "municipal entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/RegionalGovernment> a skos:Concept ;
+    skos:altLabel "local government" ;
+    skos:prefLabel "regional government"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/DistrictOfColumbiaEntity> a skos:Concept ;
+    skos:altLabel "Washington, D.C. entity" ;
+    skos:prefLabel "District of Columbia entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfPennsylvaniaEntity> a skos:Concept ;
+    skos:altLabel "Commonwealth of Pennsylvania entity" ;
+    skos:prefLabel "State of Pennsylvania entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfPennsylvaniaGovernment> a skos:Concept ;
+    skos:altLabel "Commonwealth of Pennsylvania government" ;
+    skos:prefLabel "State of Pennsylvania government"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfPennsylvaniaJurisdiction> a skos:Concept ;
+    skos:altLabel "Commonwealth of Pennsylvania jurisdiction" ;
+    skos:prefLabel "State of Pennsylvania jurisdiction"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfVirginiaEntity> a skos:Concept ;
+    skos:altLabel "Commonwealth of Virginia entity" ;
+    skos:prefLabel "State of Virginia entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfVirginiaGovernment> a skos:Concept ;
+    skos:altLabel "Commonwealth of Virginia government" ;
+    skos:prefLabel "State of Virginia government"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfVirginiaJurisdiction> a skos:Concept ;
+    skos:altLabel "Commonwealth of Virginia jurisdiction" ;
+    skos:prefLabel "State of Virginia jurisdiction"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation> a skos:Concept ;
+    skos:altLabel "body corporate" ;
+    skos:prefLabel "corporation"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/NotForProfitCorporation> a skos:Concept ;
+    skos:altLabel "non-profit corporation" ;
+    skos:prefLabel "not-for-profit corporation"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization> a skos:Concept ;
+    skos:altLabel "non-profit organization" ;
+    skos:prefLabel "not for profit organization"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/ValueAddedTaxIdentificationNumber> a skos:Concept ;
+    skos:altLabel "VAT identification number",
+        "VAT registration number" ;
+    skos:prefLabel "value-added tax identification number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/ISO17442-CodeSet> a skos:Concept ;
+    skos:altLabel "GLEIF LEI CDF v2.1 legal entity identifier (LEI) code set" ;
+    skos:prefLabel "ISO 17442 code set"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/ISO20275-CodeSet> a skos:Concept ;
+    skos:altLabel "entity legal form (ELF) code set" ;
+    skos:prefLabel "ISO 20275 code set"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/LegalEntity> a skos:Concept ;
+    skos:altLabel "artificial person",
+        "juridical entity",
+        "juridical person",
+        "juristic person" ;
+    skos:prefLabel "legal entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/NotForProfitObjective> a skos:Concept ;
+    skos:altLabel "nonprofit objective" ;
+    skos:prefLabel "not for profit objective"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/ProfitObjective> a skos:Concept ;
+    skos:altLabel "for profit objective",
+        "profit motive" ;
+    skos:prefLabel "profit objective"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/PublicPurpose> a skos:Concept ;
+    skos:altLabel "public interest" ;
+    skos:prefLabel "public purpose"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/SpecialPurposeVehicle> a skos:Concept ;
+    skos:altLabel "special purpose entity"@en ;
+    skos:prefLabel "special purpose vehicle"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/VariableInterestEntity> a skos:Concept ;
+    skos:altLabel "shell company"@en ;
+    skos:prefLabel "variable interest entity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/TotalControllingInterestParty> a skos:Concept ;
+    skos:altLabel "parent company" ;
+    skos:prefLabel "total controlling interest party"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/ArticlesOfIncorporation> a skos:Concept ;
+    skos:altLabel "articles of association" ;
+    skos:prefLabel "articles of incorporation"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/Bylaws> a skos:Concept ;
+    skos:altLabel "byelaws",
+        "membership agreement" ;
+    skos:prefLabel "bylaws"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/CompanyLaw> a skos:Concept ;
+    skos:altLabel "corporate law" ;
+    skos:prefLabel "company law"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/CompanySecretary> a skos:Concept ;
+    skos:altLabel "corporate secretary" ;
+    skos:prefLabel "company secretary"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/ExecutiveBoardMember> a skos:Concept ;
+    skos:altLabel "inside director" ;
+    skos:prefLabel "executive board member"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/Executives/NonExecutiveBoardMember> a skos:Concept ;
+    skos:altLabel "outside director" ;
+    skos:prefLabel "non-executive board member"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/Partnerships/Partnerships/PartnershipAgreement> a skos:Concept ;
+    skos:altLabel "articles of partnership" ;
+    skos:prefLabel "partnership agreement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/SoleProprietorships/SoleProprietorships/SoleProprietor> a skos:Concept ;
+    skos:altLabel "sole owner",
+        "sole trader" ;
+    skos:prefLabel "sole proprietor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/TrustAgreement> a skos:Concept ;
+    skos:altLabel "trust deed",
+        "trust document",
+        "trust instrument" ;
+    skos:prefLabel "trust agreement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/BE/Trusts/Trusts/Trustor> a skos:Concept ;
+    skos:altLabel "grantor",
+        "settlor" ;
+    skos:prefLabel "trustor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/CorporateActions/ClassAction> a skos:Concept ;
+    skos:altLabel "proposed settlement"@en ;
+    skos:prefLabel "class action"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/BonusIssue> a skos:Concept ;
+    skos:altLabel "capitalisation issue"@en,
+        "scrip issue"@en ;
+    skos:prefLabel "bonus issue"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/IntermediateSecuritiesDistribution> a skos:Concept ;
+    skos:altLabel "rights distribution"@en ;
+    skos:prefLabel "intermediate securities distribution"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/PariPassuAction> a skos:Concept ;
+    skos:altLabel "assimilation"@en ;
+    skos:prefLabel "pari-passu action"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/RepurchaseOffer> a skos:Concept ;
+    skos:altLabel "issuer bid"@en,
+        "reverse rights"@en ;
+    skos:prefLabel "repurchase offer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/ReverseStockSplit> a skos:Concept ;
+    skos:altLabel "change in nominal value"@en ;
+    skos:prefLabel "reverse stock split"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/StockSplit> a skos:Concept ;
+    skos:altLabel "change in nominal value"@en,
+        "subdivision"@en ;
+    skos:prefLabel "stock split"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/SecurityRelatedCorporateActions/TenderOffer> a skos:Concept ;
+    skos:altLabel "acquisition"@en,
+        "buyback"@en,
+        "purchase offer"@en,
+        "takeover"@en ;
+    skos:prefLabel "tender offer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditProtectionTerms> a skos:Concept ;
+    skos:altLabel "contingent leg"@en ;
+    skos:prefLabel "credit protection terms"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/MultiNameCreditDefaultSwap> a skos:Concept ;
+    skos:altLabel "multiname credit default swap" ;
+    skos:prefLabel "multi-name credit default swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyDerivative> a skos:Concept ;
+    skos:altLabel "foreign exchange derivative"@en,
+        "forex derivative"@en ;
+    skos:prefLabel "currency derivative"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForward> a skos:Concept ;
+    skos:altLabel "FX forward"@en,
+        "foreign exchange forward"@en ;
+    skos:prefLabel "currency forward"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyForwardOutright> a skos:Concept ;
+    skos:altLabel "forward outright"@en,
+        "outright forward currency transaction"@en ;
+    skos:prefLabel "currency forward outright"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencyOption> a skos:Concept ;
+    skos:altLabel "foreign exchange option"@en,
+        "forex option"@en ;
+    skos:prefLabel "currency option"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/CurrencyContracts/CurrencySpotContract> a skos:Concept ;
+    skos:altLabel "foreign exchange spot contract"@en ;
+    skos:prefLabel "currency spot contract"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ContractForDifference> a skos:Concept ;
+    skos:altLabel "spread trading"@en ;
+    skos:prefLabel "contract for difference"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CliquetOption> a skos:Concept ;
+    skos:altLabel "rachet option"@en ;
+    skos:prefLabel "cliquet option"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/CompoundOption> a skos:Concept ;
+    skos:altLabel "split-fee options"@en ;
+    skos:prefLabel "compound option"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/DigitalOption> a skos:Concept ;
+    skos:altLabel "binary option"@en ;
+    skos:prefLabel "digital option"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/ExoticOptions/Swaption> a skos:Concept ;
+    skos:altLabel "swap option"@en ;
+    skos:prefLabel "swaption"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/CurrencyFuture> a skos:Concept ;
+    skos:altLabel "foreign exchange future"@en,
+        "forex future"@en ;
+    skos:prefLabel "currency future"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/FuturesAndForwards/Forward> a skos:Concept ;
+    skos:altLabel "forward contract"@en ;
+    skos:prefLabel "forward"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExtrinsicValue> a skos:Concept ;
+    skos:altLabel "option time value"@en ;
+    skos:prefLabel "extrinsic value"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/IronButterfly> a skos:Concept ;
+    skos:altLabel "iron fly"@en ;
+    skos:prefLabel "iron butterfly"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ProtectivePut> a skos:Concept ;
+    skos:altLabel "synthetic call"@en ;
+    skos:prefLabel "protective put"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/hasCalculatedMarketValue> a skos:Concept ;
+    skos:altLabel "has premium"@en ;
+    skos:prefLabel "has calculated market value"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/hasExercisePrice> a skos:Concept ;
+    skos:altLabel "has strike price"@en ;
+    skos:prefLabel "has exercise price"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/RightsAndWarrants/AllotmentRight> a skos:Concept ;
+    skos:altLabel "bonus right"@en ;
+    skos:prefLabel "allotment right"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/RightsAndWarrants/SubscriptionRight> a skos:Concept ;
+    skos:altLabel "anti-dilution right"@en,
+        "preemptive right"@en,
+        "subscription privilege"@en ;
+    skos:prefLabel "subscription right"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/DispersionLeg> a skos:Concept ;
+    skos:altLabel "variance leg"@en ;
+    skos:prefLabel "dispersion leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/DispersionSwap> a skos:Concept ;
+    skos:altLabel "variance swap"@en ;
+    skos:prefLabel "dispersion swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/FixedPaymentLeg> a skos:Concept ;
+    skos:altLabel "fixed payment stream terms",
+        "funding leg" ;
+    skos:prefLabel "fixed payment leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapLeg> a skos:Concept ;
+    skos:altLabel "swap stream terms" ;
+    skos:prefLabel "swap leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/hasLeg> a skos:Concept ;
+    skos:altLabel "has swap stream" ;
+    skos:prefLabel "has leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedFloatCrossCurrencyInterestRateSwap> a skos:Concept ;
+    skos:altLabel "fixed float cross currency interest rate swap",
+        "fixed-float cross-currency interest rate swap" ;
+    skos:prefLabel "fixed float cross-currency interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedFloatInterestRateSwap> a skos:Concept ;
+    skos:altLabel "fixed-float interest rate swap" ;
+    skos:prefLabel "fixed float interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedFloatSingleCurrencyInterestRateSwap> a skos:Concept ;
+    skos:altLabel "fixed-float single-currency interest rate swap" ;
+    skos:prefLabel "fixed float single currency interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedInterestRateLeg> a skos:Concept ;
+    skos:altLabel "fixed interest rate swap stream" ;
+    skos:prefLabel "fixed interest rate leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FloatFloatCrossCurrencyInterestRateSwap> a skos:Concept ;
+    skos:altLabel "float-float cross-currency interest rate swap" ;
+    skos:prefLabel "float float cross-currency interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FloatFloatInterestRateSwap> a skos:Concept ;
+    skos:altLabel "basis rate swap",
+        "float-float interest rate swap" ;
+    skos:prefLabel "float float interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FloatFloatSingleCurrencyInterestRateSwap> a skos:Concept ;
+    skos:altLabel "float-float single-currency interest rate swap" ;
+    skos:prefLabel "float float single currency interest rate swap"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FloatingInterestRateLeg> a skos:Concept ;
+    skos:altLabel "floating interest rate swap stream" ;
+    skos:prefLabel "floating interest rate leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/InterestRateSwapLeg> a skos:Concept ;
+    skos:altLabel "interest rate swap stream" ;
+    skos:prefLabel "interest rate swap leg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/AlternativeAQuality> a skos:Concept ;
+    skos:altLabel "Alternative A-paper" ;
+    skos:prefLabel "alternative-A quality"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/CreditRatings/PrimeQuality> a skos:Concept ;
+    skos:altLabel "A-paper" ;
+    skos:prefLabel "prime quality"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditFacility> a skos:Concept ;
+    skos:altLabel "master commitment"@en ;
+    skos:prefLabel "credit facility"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30360BondBasis> a skos:Concept ;
+    skos:altLabel "30A/360" ;
+    skos:prefLabel "day-count convention 30/360 bond basis"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30360US> a skos:Concept ;
+    skos:altLabel "30/360" ;
+    skos:prefLabel "day-count convention 30/360 US"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30E360> a skos:Concept ;
+    skos:altLabel "30/360 ICMA",
+        "30S/360",
+        "Eurobond basis (ISDA 2006)",
+        "Special German" ;
+    skos:prefLabel "day-count convention 30E/360"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30E360ISDA> a skos:Concept ;
+    skos:altLabel "30/360 ICMA",
+        "Eurobond basis (ISDA 2006)",
+        "German" ;
+    skos:prefLabel "day-count convention 30E/360 ISDA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-Actual360> a skos:Concept ;
+    skos:altLabel "French",
+        "a/360",
+        "act/360" ;
+    skos:prefLabel "day-count convention actual/360"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-Actual365Fixed> a skos:Concept ;
+    skos:altLabel "English",
+        "a/365 fixed",
+        "a/365f",
+        "act/365 fixed" ;
+    skos:prefLabel "day-count convention actual/365 fixed"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-ActualActualICMA> a skos:Concept ;
+    skos:altLabel "ISMA-99",
+        "act/act ICMA",
+        "act/act ISMA",
+        "actual/actual" ;
+    skos:prefLabel "day-count convention actual/actual ICMA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-ActualActualISDA> a skos:Concept ;
+    skos:altLabel "act/365",
+        "act/act",
+        "actual/365",
+        "actual/actual" ;
+    skos:prefLabel "day-count convention actual/actual ISDA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/VariableInterestRate> a skos:Concept ;
+    skos:altLabel "adjustable rate" ;
+    skos:prefLabel "variable interest rate"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasOriginalTimeToMaturity> a skos:Concept ;
+    skos:altLabel "has term to maturity" ;
+    skos:prefLabel "has time to maturity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Policyholder> a skos:Concept ;
+    skos:altLabel "insured party" ;
+    skos:prefLabel "policyholder"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument> a skos:Concept ;
+    skos:altLabel "derivative contract" ;
+    skos:prefLabel "derivative instrument"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Entitlement> a skos:Concept ;
+    skos:altLabel "right" ;
+    skos:prefLabel "entitlement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future> a skos:Concept ;
+    skos:altLabel "futures contract"@en ;
+    skos:prefLabel "future"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/PackagedFinancialProduct> a skos:Concept ;
+    skos:altLabel "market-linked investment",
+        "structured product" ;
+    skos:prefLabel "packaged financial product"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/SecuritiesTransaction> a skos:Concept ;
+    skos:altLabel "financial transaction" ;
+    skos:prefLabel "securities transaction"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasNominalValue> a skos:Concept ;
+    skos:altLabel "face value" ;
+    skos:prefLabel "has nominal value"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/OfferPrice> a skos:Concept ;
+    skos:altLabel "ask price"@en,
+        "asking price"@en,
+        "offering price"@en ;
+    skos:prefLabel "offer price"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/OfficialClosingPrice> a skos:Concept ;
+    skos:altLabel "end-of-day price"@en ;
+    skos:prefLabel "official closing price"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/TradingDay> a skos:Concept ;
+    skos:altLabel "regular trading hours"@en ;
+    skos:prefLabel "trading day"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/hasRoundLotSize> a skos:Concept ;
+    skos:altLabel "normal trading unit"@en,
+        "unit of trading"@en ;
+    skos:prefLabel "has round lot size"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Ebene> a skos:Concept ;
+    skos:altLabel "Cybercity",
+        "Ebene Cybercity" ;
+    skos:prefLabel "Ebene"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/GIFT_City> a skos:Concept ;
+    skos:altLabel "Gujarat International Finance Tec-City" ;
+    skos:prefLabel "GIFT City"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/New_York> a skos:Concept ;
+    skos:altLabel "New York City" ;
+    skos:prefLabel "New York"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Saint-Petersburg> a skos:Concept ;
+    skos:altLabel "St. Petersburg" ;
+    skos:prefLabel "Saint Petersburg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Saint_Peter_Port> a skos:Concept ;
+    skos:altLabel "St. Peter Port" ;
+    skos:prefLabel "Saint Peter Port"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/EuropeanEconomicAreaBranch> a skos:Concept ;
+    skos:altLabel "EEA branch" ;
+    skos:prefLabel "European Economic Area branch"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EUFinancialServicesEntities/NonEuropeanEconomicAreaBranch> a skos:Concept ;
+    skos:altLabel "non-EEA branch" ;
+    skos:prefLabel "non European Economic Area branch"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessIdentifierCode> a skos:Concept ;
+    skos:altLabel "SWIFT ID",
+        "SWIFT code",
+        "SWIFT-BIC",
+        "bank identifier code",
+        "business entity identifier" ;
+    skos:prefLabel "business identifier code"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/BusinessPartyPrefix> a skos:Concept ;
+    skos:altLabel "bank code",
+        "institution code" ;
+    skos:prefLabel "business party prefix"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CommercialFinanceCompany> a skos:Concept ;
+    skos:altLabel "commercial credit company" ;
+    skos:prefLabel "commercial finance company"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ConsumerFinanceCompany> a skos:Concept ;
+    skos:altLabel "direct loan company",
+        "small loan company" ;
+    skos:prefLabel "consumer finance company"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ElectronicFundsTransferService> a skos:Concept ;
+    skos:altLabel "wire transfer service" ;
+    skos:prefLabel "electronic funds transfer service"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/FinancialInstitution> a skos:Concept ;
+    skos:altLabel "financial intermediary" ;
+    skos:prefLabel "financial institution"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/SalesFinanceCompany> a skos:Concept ;
+    skos:altLabel "acceptance company" ;
+    skos:prefLabel "sales finance company"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/UnitInvestmentTrust> a skos:Concept ;
+    skos:altLabel "unit investment company" ;
+    skos:prefLabel "unit investment trust"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities/BusinessIdentifierCodeRegistrationAuthority> a skos:Concept ;
+    skos:altLabel "BIC code registrar" ;
+    skos:prefLabel "Business Identifier Code registration authority"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/InternationalRegistriesAndAuthorities/MICRegistrationAuthority> a skos:Concept ;
+    skos:altLabel "ISO 10383 Registration Authority" ;
+    skos:prefLabel "MIC registration authority"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/Exchange> a skos:Concept ;
+    skos:altLabel "market" ;
+    skos:prefLabel "exchange"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/InterdealerQuotationSystem> a skos:Concept ;
+    skos:altLabel "inter-dealer quotation system" ;
+    skos:prefLabel "interdealer quotation system"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/MarketIdentifier> a skos:Concept ;
+    skos:altLabel "Market Identifier Code" ;
+    skos:prefLabel "market identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/OffMarketFacility> a skos:Concept ;
+    skos:altLabel "off-book",
+        "off-facility" ;
+    skos:prefLabel "off-market facility"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/QuoteDrivenMarket> a skos:Concept ;
+    skos:altLabel "price-driven market" ;
+    skos:prefLabel "quote-driven market"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/RegulatedExchange> a skos:Concept ;
+    skos:altLabel "regulated market" ;
+    skos:prefLabel "regulated exchange"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanAssociation> a skos:Concept ;
+    skos:altLabel "savings and loan association" ;
+    skos:prefLabel "savings loan association"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/SavingsLoanHoldingCompany> a skos:Concept ;
+    skos:altLabel "savings and loan holding company" ;
+    skos:prefLabel "savings loan holding company"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/EmployerIdentificationNumber> a skos:Concept ;
+    skos:altLabel "Federal Employer Identification Number",
+        "Federal Tax Identification Number" ;
+    skos:prefLabel "employer identification number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveBoard> a skos:Concept ;
+    skos:altLabel "Federal Reserve Board of Governors" ;
+    skos:prefLabel "Federal Reserve Board"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/FederalReserveSystem> a skos:Concept ;
+    skos:altLabel "Fed",
+        "Federal Reserve" ;
+    skos:prefLabel "Federal Reserve System"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/USDepartmentOfTheTreasury> a skos:Concept ;
+    skos:altLabel "Treasury Department" ;
+    skos:prefLabel "U.S. Department of the Treasury"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/Registry> a skos:Concept ;
+    skos:altLabel "register" ;
+    skos:prefLabel "registry"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/RegulatoryAgency> a skos:Concept ;
+    skos:altLabel "regulator",
+        "regulatory authority",
+        "regulatory body" ;
+    skos:prefLabel "regulatory agency"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/CardAccounts/CardAuthenticationValue2> a skos:Concept ;
+    skos:altLabel "CAV2" ;
+    skos:prefLabel "card authentication value 2"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/CardAccounts/CardVerificationValue2> a skos:Concept ;
+    skos:altLabel "CVV2" ;
+    skos:prefLabel "card verification value 2"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/CardAccounts/IssuingFinancialInstitution> a skos:Concept ;
+    skos:altLabel "issuing bank" ;
+    skos:prefLabel "issuing financial institution"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/CardAccounts/PrimaryCardAccountNumber> a skos:Concept ;
+    skos:altLabel "primary account number" ;
+    skos:prefLabel "primary card account number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/AccountIdentifier> a skos:Concept ;
+    skos:altLabel "account number" ;
+    skos:prefLabel "account identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/BankAccountIdentifier> a skos:Concept ;
+    skos:altLabel "bank account number" ;
+    skos:prefLabel "bank account identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/BankIdentifier> a skos:Concept ;
+    skos:altLabel "bank number" ;
+    skos:prefLabel "bank identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/BasicBankAccountIdentifier> a skos:Concept ;
+    skos:altLabel "basic bank account number" ;
+    skos:prefLabel "basic bank account identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/CustomerAccount> a skos:Concept ;
+    skos:altLabel "financial service account" ;
+    skos:prefLabel "customer account"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/InternationalBankAccountIdentifier> a skos:Concept ;
+    skos:altLabel "international bank account number" ;
+    skos:prefLabel "international bank account identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/RelationshipManager> a skos:Concept ;
+    skos:altLabel "account manager" ;
+    skos:prefLabel "relationship manager"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/hasPrimaryAccountHolder> a skos:Concept ;
+    skos:altLabel "has primary account owner" ;
+    skos:prefLabel "has primary account holder"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/hasSecondaryAccountHolder> a skos:Concept ;
+    skos:altLabel "has account co-owner",
+        "has secondary account owner" ;
+    skos:prefLabel "has secondary account holder"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/RegisteredAgent> a skos:Concept ;
+    skos:altLabel "resident agent",
+        "statutory agent" ;
+    skos:prefLabel "registered agent"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/OwnersEquity> a skos:Concept ;
+    skos:altLabel "equity",
+        "net worth",
+        "capital"@en,
+        "contributed capital"@en ;
+    skos:prefLabel "owners' equity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/AmountOfMoney> a skos:Concept ;
+    skos:altLabel "cash" ;
+    skos:prefLabel "amount of money"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency> a skos:Concept ;
+    skos:altLabel "currency unit",
+        "monetary unit" ;
+    skos:prefLabel "currency"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/BirthCertificate> a skos:Concept ;
+    skos:altLabel "certificate of live birth" ;
+    skos:prefLabel "birth certificate"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/BirthCertificateIdentifier> a skos:Concept ;
+    skos:altLabel "birth certificate number" ;
+    skos:prefLabel "birth certificate identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfBirth> a skos:Concept ;
+    skos:altLabel "birth date",
+        "birthday" ;
+    skos:prefLabel "date of birth"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DateOfDeath> a skos:Concept ;
+    skos:altLabel "death date" ;
+    skos:prefLabel "date of death"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DeathCertificateIdentifier> a skos:Concept ;
+    skos:altLabel "death certificate number" ;
+    skos:prefLabel "death certificate identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicense> a skos:Concept ;
+    skos:altLabel "driving licence" ;
+    skos:prefLabel "driver's license"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/DriversLicenseIdentifier> a skos:Concept ;
+    skos:altLabel "driver's license number" ;
+    skos:prefLabel "driver's license identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/IdentityDocument> a skos:Concept ;
+    skos:altLabel "identity card" ;
+    skos:prefLabel "identity document"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/NationalIdentificationNumber> a skos:Concept ;
+    skos:altLabel "national identity number" ;
+    skos:prefLabel "national identification number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/Person> a skos:Concept ;
+    skos:altLabel "natural person" ;
+    skos:prefLabel "person"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/AgentsAndPeople/People/PlaceOfBirth> a skos:Concept ;
+    skos:altLabel "birth place" ;
+    skos:prefLabel "place of birth"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/Obligor> a skos:Concept ;
+    skos:altLabel "obligated party",
+        "obligator" ;
+    skos:prefLabel "obligor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MasterAgreement> a skos:Concept ;
+    skos:altLabel "master contract" ;
+    skos:prefLabel "master agreement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MutualContractualAgreement> a skos:Concept ;
+    skos:altLabel "bilateral contract" ;
+    skos:prefLabel "mutual contractual agreement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/DateTimeStamp> a skos:Concept ;
+    skos:altLabel "time stamp" ;
+    skos:prefLabel "date time stamp"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/RecurrenceInterval> a skos:Concept ;
+    skos:altLabel "frequency" ;
+    skos:prefLabel "recurrence interval"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/TimeInstant> a skos:Concept ;
+    skos:altLabel "instant in time",
+        "time point" ;
+    skos:prefLabel "time instant"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/Occurrence> a skos:Concept ;
+    skos:altLabel "event" ;
+    skos:prefLabel "occurrence"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/Organizations/OrganizationPartIdentifier> a skos:Concept ;
+    skos:altLabel "organization sub-unit identifier" ;
+    skos:prefLabel "organization part identifier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/Organizations/OrganizationalSubUnit> a skos:Concept ;
+    skos:altLabel "organization part" ;
+    skos:prefLabel "organizational sub-unit"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/Asset> a skos:Concept ;
+    skos:altLabel "economic resource" ;
+    skos:prefLabel "asset"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Apartment> a skos:Concept ;
+    skos:altLabel "APT" ;
+    skos:prefLabel "apartment"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Basement> a skos:Concept ;
+    skos:altLabel "BSMT" ;
+    skos:prefLabel "basement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Building> a skos:Concept ;
+    skos:altLabel "BLDG" ;
+    skos:prefLabel "building"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Department> a skos:Concept ;
+    skos:altLabel "DEPT" ;
+    skos:prefLabel "department"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Floor> a skos:Concept ;
+    skos:altLabel "FL" ;
+    skos:prefLabel "floor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Front> a skos:Concept ;
+    skos:altLabel "FRNT" ;
+    skos:prefLabel "front"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Hangar> a skos:Concept ;
+    skos:altLabel "HNGR" ;
+    skos:prefLabel "hanger"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Key> a skos:Concept ;
+    skos:altLabel "KEY" ;
+    skos:prefLabel "key"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Lobby> a skos:Concept ;
+    skos:altLabel "LBBY" ;
+    skos:prefLabel "lobby"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Lot> a skos:Concept ;
+    skos:altLabel "LOT" ;
+    skos:prefLabel "lot"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Lower> a skos:Concept ;
+    skos:altLabel "LOWR" ;
+    skos:prefLabel "lower"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Office> a skos:Concept ;
+    skos:altLabel "OFC" ;
+    skos:prefLabel "office"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Penthouse> a skos:Concept ;
+    skos:altLabel "PH" ;
+    skos:prefLabel "penthouse"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Pier> a skos:Concept ;
+    skos:altLabel "PIER" ;
+    skos:prefLabel "pier"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Postcode> a skos:Concept ;
+    skos:altLabel "postal code" ;
+    skos:prefLabel "postcode"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/PrimaryAddressNumber> a skos:Concept ;
+    skos:altLabel "street number" ;
+    skos:prefLabel "primary address number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Rear> a skos:Concept ;
+    skos:altLabel "REAR" ;
+    skos:prefLabel "rear"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Room> a skos:Concept ;
+    skos:altLabel "RM" ;
+    skos:prefLabel "room"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Side> a skos:Concept ;
+    skos:altLabel "SIDE" ;
+    skos:prefLabel "side"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Slip> a skos:Concept ;
+    skos:altLabel "SLP" ;
+    skos:prefLabel "slip"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Space> a skos:Concept ;
+    skos:altLabel "SPC" ;
+    skos:prefLabel "space"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Stop> a skos:Concept ;
+    skos:altLabel "STOP" ;
+    skos:prefLabel "stop"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Suite> a skos:Concept ;
+    skos:altLabel "STE" ;
+    skos:prefLabel "suite"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Trailer> a skos:Concept ;
+    skos:altLabel "TRLR" ;
+    skos:prefLabel "trailer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Unit> a skos:Concept ;
+    skos:altLabel "UNIT" ;
+    skos:prefLabel "unit"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/Upper> a skos:Concept ;
+    skos:altLabel "UPPR" ;
+    skos:prefLabel "upper"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/HighwayContractRouteDesignator> a skos:Concept ;
+    skos:altLabel "HC" ;
+    skos:prefLabel "highway contract route designator"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/MailboxDesignator> a skos:Concept ;
+    skos:altLabel "BOX" ;
+    skos:prefLabel "mailbox designator"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/RuralRouteDesignator> a skos:Concept ;
+    skos:altLabel "RR" ;
+    skos:prefLabel "rural route designator"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/USPostOfficeBoxDesignator> a skos:Concept ;
+    skos:altLabel "PO BOX" ;
+    skos:prefLabel "post office box designator"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AA> a skos:Concept ;
+    skos:altLabel "AA" ;
+    skos:prefLabel "AA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AB> a skos:Concept ;
+    skos:altLabel "AB" ;
+    skos:prefLabel "AB"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AE> a skos:Concept ;
+    skos:altLabel "AE" ;
+    skos:prefLabel "AE"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AK> a skos:Concept ;
+    skos:altLabel "AK" ;
+    skos:prefLabel "AK"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AL> a skos:Concept ;
+    skos:altLabel "AL" ;
+    skos:prefLabel "AL"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AP> a skos:Concept ;
+    skos:altLabel "AP" ;
+    skos:prefLabel "AP"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AR> a skos:Concept ;
+    skos:altLabel "AR" ;
+    skos:prefLabel "AR"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AS> a skos:Concept ;
+    skos:altLabel "AS" ;
+    skos:prefLabel "AS"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/AZ> a skos:Concept ;
+    skos:altLabel "AZ" ;
+    skos:prefLabel "AZ"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Alley> a skos:Concept ;
+    skos:altLabel "ALLEE",
+        "ALLEY",
+        "ALLY",
+        "ALY" ;
+    skos:prefLabel "alley"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Annex> a skos:Concept ;
+    skos:altLabel "ANEX",
+        "ANNEX",
+        "ANNX",
+        "ANX" ;
+    skos:prefLabel "annex"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Arcade> a skos:Concept ;
+    skos:altLabel "ARC",
+        "ARCADE" ;
+    skos:prefLabel "arcade"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Avenue> a skos:Concept ;
+    skos:altLabel "AV",
+        "AVE",
+        "AVEN",
+        "AVENU",
+        "AVENUE",
+        "AVN",
+        "AVNUE" ;
+    skos:prefLabel "avenue"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/BC> a skos:Concept ;
+    skos:altLabel "BC" ;
+    skos:prefLabel "BC"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bayou> a skos:Concept ;
+    skos:altLabel "BAYOO",
+        "BAYOU",
+        "BYU" ;
+    skos:prefLabel "bayou"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Beach> a skos:Concept ;
+    skos:altLabel "BCH",
+        "BEACH" ;
+    skos:prefLabel "beach"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bend> a skos:Concept ;
+    skos:altLabel "BEND",
+        "BND" ;
+    skos:prefLabel "bend"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bluff> a skos:Concept ;
+    skos:altLabel "BLF",
+        "BLUF",
+        "BLUFF" ;
+    skos:prefLabel "bluff"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bluffs> a skos:Concept ;
+    skos:altLabel "BLFS",
+        "BLUFFS" ;
+    skos:prefLabel "bluffs"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bottom> a skos:Concept ;
+    skos:altLabel "BOT",
+        "BOTTM",
+        "BOTTOM",
+        "BTM" ;
+    skos:prefLabel "bottom"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Boulevard> a skos:Concept ;
+    skos:altLabel "BLVD",
+        "BOUL",
+        "BOULEVARD",
+        "BOULV" ;
+    skos:prefLabel "boulevard"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Branch> a skos:Concept ;
+    skos:altLabel "BR",
+        "BRANCH",
+        "BRNCH" ;
+    skos:prefLabel "branch"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bridge> a skos:Concept ;
+    skos:altLabel "BRDGE",
+        "BRG",
+        "BRIDGE" ;
+    skos:prefLabel "bridge"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Brook> a skos:Concept ;
+    skos:altLabel "BRK",
+        "BROOK" ;
+    skos:prefLabel "brook"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Brooks> a skos:Concept ;
+    skos:altLabel "BRKS",
+        "BROOKS" ;
+    skos:prefLabel "brooks"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Burg> a skos:Concept ;
+    skos:altLabel "BG",
+        "BURG" ;
+    skos:prefLabel "burg"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Burgs> a skos:Concept ;
+    skos:altLabel "BGS",
+        "BURGS" ;
+    skos:prefLabel "burgs"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Bypass> a skos:Concept ;
+    skos:altLabel "BYP",
+        "BYPA",
+        "BYPAS",
+        "BYPASS",
+        "BYS" ;
+    skos:prefLabel "bypass"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/CA> a skos:Concept ;
+    skos:altLabel "CA" ;
+    skos:prefLabel "CA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/CO> a skos:Concept ;
+    skos:altLabel "CO" ;
+    skos:prefLabel "CO"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/CT> a skos:Concept ;
+    skos:altLabel "CT" ;
+    skos:prefLabel "CT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Camp> a skos:Concept ;
+    skos:altLabel "CAMP",
+        "CMP",
+        "CP" ;
+    skos:prefLabel "camp"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Canyon> a skos:Concept ;
+    skos:altLabel "CANYN",
+        "CANYON",
+        "CNYN",
+        "CYN" ;
+    skos:prefLabel "canyon"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Cape> a skos:Concept ;
+    skos:altLabel "CAPE",
+        "CPE" ;
+    skos:prefLabel "cape"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Causeway> a skos:Concept ;
+    skos:altLabel "CAUSEWAY",
+        "CAUSWA",
+        "CSWY" ;
+    skos:prefLabel "causeway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Center> a skos:Concept ;
+    skos:altLabel "CEN",
+        "CENT",
+        "CENTER",
+        "CENTR",
+        "CENTRE",
+        "CNTER",
+        "CNTR",
+        "CTR" ;
+    skos:prefLabel "center"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Centers> a skos:Concept ;
+    skos:altLabel "CENTERS",
+        "CTRS" ;
+    skos:prefLabel "centers"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Circle> a skos:Concept ;
+    skos:altLabel "CIR",
+        "CIRC",
+        "CIRCL",
+        "CIRCLE",
+        "CRCL",
+        "CRCLE" ;
+    skos:prefLabel "circle"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Circles> a skos:Concept ;
+    skos:altLabel "CIRCLES",
+        "CIRS" ;
+    skos:prefLabel "circles"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Cliff> a skos:Concept ;
+    skos:altLabel "CLF",
+        "CLIFF" ;
+    skos:prefLabel "cliff"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Cliffs> a skos:Concept ;
+    skos:altLabel "CLFS",
+        "CLIFFS" ;
+    skos:prefLabel "cliffs"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Club> a skos:Concept ;
+    skos:altLabel "CLB",
+        "CLUB" ;
+    skos:prefLabel "club"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Common> a skos:Concept ;
+    skos:altLabel "CMN",
+        "COMMON" ;
+    skos:prefLabel "common"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Commons> a skos:Concept ;
+    skos:altLabel "CMNS",
+        "COMMONS" ;
+    skos:prefLabel "commons"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Corner> a skos:Concept ;
+    skos:altLabel "COR",
+        "CORNER" ;
+    skos:prefLabel "corner"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Corners> a skos:Concept ;
+    skos:altLabel "CORNERS",
+        "CORS" ;
+    skos:prefLabel "corners"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Course> a skos:Concept ;
+    skos:altLabel "COURSE",
+        "CRSE" ;
+    skos:prefLabel "course"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Court> a skos:Concept ;
+    skos:altLabel "COURT",
+        "CT" ;
+    skos:prefLabel "court"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Courts> a skos:Concept ;
+    skos:altLabel "COURTS",
+        "CTS" ;
+    skos:prefLabel "courts"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Cove> a skos:Concept ;
+    skos:altLabel "COVE",
+        "CV" ;
+    skos:prefLabel "cove"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Coves> a skos:Concept ;
+    skos:altLabel "COVES",
+        "CVS" ;
+    skos:prefLabel "coves"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Creek> a skos:Concept ;
+    skos:altLabel "CREEK",
+        "CRK" ;
+    skos:prefLabel "creek"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Crescent> a skos:Concept ;
+    skos:altLabel "CRES",
+        "CRESCENT",
+        "CRSENT",
+        "CRSNT" ;
+    skos:prefLabel "crescent"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Crest> a skos:Concept ;
+    skos:altLabel "CREST",
+        "CRST" ;
+    skos:prefLabel "crest"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Crossing> a skos:Concept ;
+    skos:altLabel "CROSSING",
+        "CRSSNG",
+        "XING" ;
+    skos:prefLabel "crossing"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Crossroad> a skos:Concept ;
+    skos:altLabel "CROSSROAD",
+        "XRD" ;
+    skos:prefLabel "crossroad"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Crossroads> a skos:Concept ;
+    skos:altLabel "CROSSROADS",
+        "XRDS" ;
+    skos:prefLabel "crossroads"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Curve> a skos:Concept ;
+    skos:altLabel "CURV",
+        "CURVE" ;
+    skos:prefLabel "curve"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/DC> a skos:Concept ;
+    skos:altLabel "DC" ;
+    skos:prefLabel "DC"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/DE> a skos:Concept ;
+    skos:altLabel "DE" ;
+    skos:prefLabel "DE"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Dale> a skos:Concept ;
+    skos:altLabel "DALE",
+        "DL" ;
+    skos:prefLabel "dale"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Dam> a skos:Concept ;
+    skos:altLabel "DAM",
+        "DM" ;
+    skos:prefLabel "dam"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Divide> a skos:Concept ;
+    skos:altLabel "DIV",
+        "DIVIDE",
+        "DV",
+        "DVD" ;
+    skos:prefLabel "divide"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Drive> a skos:Concept ;
+    skos:altLabel "DR",
+        "DRIV",
+        "DRIVE",
+        "DRV" ;
+    skos:prefLabel "drive"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Drives> a skos:Concept ;
+    skos:altLabel "DRIVES",
+        "DRS" ;
+    skos:prefLabel "drives"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Estate> a skos:Concept ;
+    skos:altLabel "EST",
+        "ESTATE" ;
+    skos:prefLabel "estate"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Estates> a skos:Concept ;
+    skos:altLabel "ESTATES",
+        "ESTS" ;
+    skos:prefLabel "estates"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Expressway> a skos:Concept ;
+    skos:altLabel "EXP",
+        "EXPR",
+        "EXPRESS",
+        "EXPRESSWAY",
+        "EXPW",
+        "EXPY" ;
+    skos:prefLabel "expressway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Extension> a skos:Concept ;
+    skos:altLabel "EXT",
+        "EXTENSION",
+        "EXTN",
+        "EXTNSN" ;
+    skos:prefLabel "extension"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Extensions> a skos:Concept ;
+    skos:altLabel "EXTS" ;
+    skos:prefLabel "extensions"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/FL> a skos:Concept ;
+    skos:altLabel "FL" ;
+    skos:prefLabel "FL"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Fall> a skos:Concept ;
+    skos:altLabel "FALL" ;
+    skos:prefLabel "fall"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Falls> a skos:Concept ;
+    skos:altLabel "FALLS",
+        "FLS" ;
+    skos:prefLabel "falls"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ferry> a skos:Concept ;
+    skos:altLabel "FERRY",
+        "FRRY",
+        "FRY" ;
+    skos:prefLabel "ferry"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Field> a skos:Concept ;
+    skos:altLabel "FIELD",
+        "FLD" ;
+    skos:prefLabel "field"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Fields> a skos:Concept ;
+    skos:altLabel "FIELDS",
+        "FLDS" ;
+    skos:prefLabel "fields"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Flat> a skos:Concept ;
+    skos:altLabel "FLAT",
+        "FLT" ;
+    skos:prefLabel "flat"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Flats> a skos:Concept ;
+    skos:altLabel "FLATS",
+        "FLTS" ;
+    skos:prefLabel "flats"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ford> a skos:Concept ;
+    skos:altLabel "FORD",
+        "FRD" ;
+    skos:prefLabel "ford"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Fords> a skos:Concept ;
+    skos:altLabel "FORDS",
+        "FRDS" ;
+    skos:prefLabel "fords"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Forest> a skos:Concept ;
+    skos:altLabel "FOREST",
+        "FORESTS",
+        "FRST" ;
+    skos:prefLabel "forest"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Forge> a skos:Concept ;
+    skos:altLabel "FORG",
+        "FORGE",
+        "FRG" ;
+    skos:prefLabel "forge"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Forges> a skos:Concept ;
+    skos:altLabel "FORGES",
+        "FRGS" ;
+    skos:prefLabel "forges"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Fork> a skos:Concept ;
+    skos:altLabel "FORK",
+        "FRK" ;
+    skos:prefLabel "fork"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Forks> a skos:Concept ;
+    skos:altLabel "FORKS",
+        "FRKS" ;
+    skos:prefLabel "forks"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Fort> a skos:Concept ;
+    skos:altLabel "FORT",
+        "FRT",
+        "FT" ;
+    skos:prefLabel "fort"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Freeway> a skos:Concept ;
+    skos:altLabel "FREEWAY",
+        "FREEWY",
+        "FRWAY",
+        "FRWY",
+        "FWY" ;
+    skos:prefLabel "freeway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/GA> a skos:Concept ;
+    skos:altLabel "GA" ;
+    skos:prefLabel "GA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/GU> a skos:Concept ;
+    skos:altLabel "GU" ;
+    skos:prefLabel "GU"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Garden> a skos:Concept ;
+    skos:altLabel "GARDEN",
+        "GARDN",
+        "GDN",
+        "GRDEN",
+        "GRDN" ;
+    skos:prefLabel "garden"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Gardens> a skos:Concept ;
+    skos:altLabel "GARDENS",
+        "GDNS",
+        "GRDNS" ;
+    skos:prefLabel "gardens"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Gateway> a skos:Concept ;
+    skos:altLabel "GATEWAY",
+        "GATEWY",
+        "GATWAY",
+        "GTWAY",
+        "GTWY" ;
+    skos:prefLabel "gateway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Glen> a skos:Concept ;
+    skos:altLabel "GLEN",
+        "GLN" ;
+    skos:prefLabel "glen"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Glens> a skos:Concept ;
+    skos:altLabel "GLENS",
+        "GLNS" ;
+    skos:prefLabel "glens"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Green> a skos:Concept ;
+    skos:altLabel "GREEN",
+        "GRN" ;
+    skos:prefLabel "green"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Greens> a skos:Concept ;
+    skos:altLabel "GREENS",
+        "GRNS" ;
+    skos:prefLabel "greens"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Grove> a skos:Concept ;
+    skos:altLabel "GROV",
+        "GROVE",
+        "GRV" ;
+    skos:prefLabel "grove"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Groves> a skos:Concept ;
+    skos:altLabel "GROVES",
+        "GRVS" ;
+    skos:prefLabel "groves"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/HI> a skos:Concept ;
+    skos:altLabel "HI" ;
+    skos:prefLabel "HI"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Harbor> a skos:Concept ;
+    skos:altLabel "HARB",
+        "HARBOR",
+        "HARBR",
+        "HBR",
+        "HRBOR" ;
+    skos:prefLabel "harbor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Harbors> a skos:Concept ;
+    skos:altLabel "HARBORS",
+        "HBRS" ;
+    skos:prefLabel "harbors"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Haven> a skos:Concept ;
+    skos:altLabel "HAVEN",
+        "HVN" ;
+    skos:prefLabel "haven"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Heights> a skos:Concept ;
+    skos:altLabel "HT",
+        "HTS" ;
+    skos:prefLabel "heights"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Highway> a skos:Concept ;
+    skos:altLabel "HIGHWAY",
+        "HIGHWY",
+        "HIWAY",
+        "HIWY",
+        "HWAY",
+        "HWY" ;
+    skos:prefLabel "highway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Hill> a skos:Concept ;
+    skos:altLabel "HILL",
+        "HL" ;
+    skos:prefLabel "hill"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Hills> a skos:Concept ;
+    skos:altLabel "HILLS",
+        "HLS" ;
+    skos:prefLabel "hills"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Hollow> a skos:Concept ;
+    skos:altLabel "HLLW",
+        "HOLLOW",
+        "HOLLOWS",
+        "HOLW",
+        "HOLWS" ;
+    skos:prefLabel "hollow"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/IA> a skos:Concept ;
+    skos:altLabel "IA" ;
+    skos:prefLabel "IA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/ID> a skos:Concept ;
+    skos:altLabel "ID" ;
+    skos:prefLabel "ID"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/IL> a skos:Concept ;
+    skos:altLabel "IL" ;
+    skos:prefLabel "IL"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/IN> a skos:Concept ;
+    skos:altLabel "IN" ;
+    skos:prefLabel "IN"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Inlet> a skos:Concept ;
+    skos:altLabel "INLT" ;
+    skos:prefLabel "inlet"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Island> a skos:Concept ;
+    skos:altLabel "IS",
+        "ISLAND",
+        "ISLND" ;
+    skos:prefLabel "island"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Islands> a skos:Concept ;
+    skos:altLabel "ISLANDS",
+        "ISLNDS",
+        "ISS" ;
+    skos:prefLabel "islands"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Isle> a skos:Concept ;
+    skos:altLabel "ISLE",
+        "ISLES" ;
+    skos:prefLabel "isle"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Junction> a skos:Concept ;
+    skos:altLabel "JCT",
+        "JCTION",
+        "JCTN",
+        "JUNCTION",
+        "JUNCTN",
+        "JUNCTON" ;
+    skos:prefLabel "junction"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Junctions> a skos:Concept ;
+    skos:altLabel "JCTNS",
+        "JCTS",
+        "JUNCTIONS" ;
+    skos:prefLabel "junctions"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/KS> a skos:Concept ;
+    skos:altLabel "KS" ;
+    skos:prefLabel "KS"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/KY> a skos:Concept ;
+    skos:altLabel "KY" ;
+    skos:prefLabel "KY"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Key> a skos:Concept ;
+    skos:altLabel "KEY",
+        "KY" ;
+    skos:prefLabel "key"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Keys> a skos:Concept ;
+    skos:altLabel "KEYS",
+        "KYS" ;
+    skos:prefLabel "keys"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Knoll> a skos:Concept ;
+    skos:altLabel "KNL",
+        "KNOL",
+        "KNOLL" ;
+    skos:prefLabel "knoll"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Knolls> a skos:Concept ;
+    skos:altLabel "KNLS",
+        "KNOLLS" ;
+    skos:prefLabel "knolls"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/LA> a skos:Concept ;
+    skos:altLabel "LA" ;
+    skos:prefLabel "LA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lake> a skos:Concept ;
+    skos:altLabel "LAKE",
+        "LK" ;
+    skos:prefLabel "lake"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lakes> a skos:Concept ;
+    skos:altLabel "LAKES",
+        "LKS" ;
+    skos:prefLabel "lakes"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Land> a skos:Concept ;
+    skos:altLabel "LAND" ;
+    skos:prefLabel "land"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Landing> a skos:Concept ;
+    skos:altLabel "LANDING",
+        "LNDG",
+        "LNDNG" ;
+    skos:prefLabel "landing"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lane> a skos:Concept ;
+    skos:altLabel "LANE",
+        "LN" ;
+    skos:prefLabel "lane"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Light> a skos:Concept ;
+    skos:altLabel "LGT",
+        "LIGHT" ;
+    skos:prefLabel "light"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lights> a skos:Concept ;
+    skos:altLabel "LGTS",
+        "LIGHTS" ;
+    skos:prefLabel "lights"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Loaf> a skos:Concept ;
+    skos:altLabel "LF",
+        "LOAF" ;
+    skos:prefLabel "loaf"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lock> a skos:Concept ;
+    skos:altLabel "LCK",
+        "LOCK" ;
+    skos:prefLabel "lock"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Locks> a skos:Concept ;
+    skos:altLabel "LCKS",
+        "LOCKS" ;
+    skos:prefLabel "locks"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Lodge> a skos:Concept ;
+    skos:altLabel "LDG",
+        "LDGE",
+        "LODG",
+        "LODGE" ;
+    skos:prefLabel "lodge"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Loop> a skos:Concept ;
+    skos:altLabel "LOOP",
+        "LOOPS" ;
+    skos:prefLabel "loop"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MA> a skos:Concept ;
+    skos:altLabel "MA" ;
+    skos:prefLabel "MA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MB> a skos:Concept ;
+    skos:altLabel "MB" ;
+    skos:prefLabel "MB"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MD> a skos:Concept ;
+    skos:altLabel "MD" ;
+    skos:prefLabel "MD"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/ME> a skos:Concept ;
+    skos:altLabel "ME" ;
+    skos:prefLabel "ME"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MI> a skos:Concept ;
+    skos:altLabel "MI" ;
+    skos:prefLabel "MI"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MN> a skos:Concept ;
+    skos:altLabel "MN" ;
+    skos:prefLabel "MN"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MO> a skos:Concept ;
+    skos:altLabel "MO" ;
+    skos:prefLabel "MO"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MP> a skos:Concept ;
+    skos:altLabel "MP" ;
+    skos:prefLabel "MP"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MS> a skos:Concept ;
+    skos:altLabel "MS" ;
+    skos:prefLabel "MS"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/MT> a skos:Concept ;
+    skos:altLabel "MT" ;
+    skos:prefLabel "MT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mall> a skos:Concept ;
+    skos:altLabel "MALL" ;
+    skos:prefLabel "mall"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Manor> a skos:Concept ;
+    skos:altLabel "MANOR",
+        "MNR" ;
+    skos:prefLabel "manor"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Manors> a skos:Concept ;
+    skos:altLabel "MANORS",
+        "MNRS" ;
+    skos:prefLabel "manors"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Meadow> a skos:Concept ;
+    skos:altLabel "MDW",
+        "MEADOW" ;
+    skos:prefLabel "meadow"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Meadows> a skos:Concept ;
+    skos:altLabel "MDW",
+        "MDWS",
+        "MEADOWS",
+        "MEDOWS" ;
+    skos:prefLabel "meadows"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mews> a skos:Concept ;
+    skos:altLabel "MEWS" ;
+    skos:prefLabel "mews"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mill> a skos:Concept ;
+    skos:altLabel "MILL",
+        "ML" ;
+    skos:prefLabel "mill"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mills> a skos:Concept ;
+    skos:altLabel "MILLS",
+        "MLS" ;
+    skos:prefLabel "mills"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mission> a skos:Concept ;
+    skos:altLabel "MISSN",
+        "MSN",
+        "MSSN" ;
+    skos:prefLabel "mission"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Motorway> a skos:Concept ;
+    skos:altLabel "MOTORWAY",
+        "MTWY" ;
+    skos:prefLabel "motorway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mount> a skos:Concept ;
+    skos:altLabel "MNT",
+        "MOUNT",
+        "MT" ;
+    skos:prefLabel "mount"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mountain> a skos:Concept ;
+    skos:altLabel "MNTAIN",
+        "MNTN",
+        "MOUNTAIN",
+        "MOUNTIN",
+        "MTIN",
+        "MTN" ;
+    skos:prefLabel "mountain"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Mountains> a skos:Concept ;
+    skos:altLabel "MNTNS",
+        "MOUNTAINS",
+        "MTNS" ;
+    skos:prefLabel "mountains"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NB> a skos:Concept ;
+    skos:altLabel "NB" ;
+    skos:prefLabel "NB"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NC> a skos:Concept ;
+    skos:altLabel "NC" ;
+    skos:prefLabel "NC"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/ND> a skos:Concept ;
+    skos:altLabel "ND" ;
+    skos:prefLabel "ND"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NE> a skos:Concept ;
+    skos:altLabel "NE" ;
+    skos:prefLabel "NE"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NH> a skos:Concept ;
+    skos:altLabel "NH" ;
+    skos:prefLabel "NH"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NJ> a skos:Concept ;
+    skos:altLabel "NJ" ;
+    skos:prefLabel "NJ"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NL> a skos:Concept ;
+    skos:altLabel "NL" ;
+    skos:prefLabel "NL"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NM> a skos:Concept ;
+    skos:altLabel "NM" ;
+    skos:prefLabel "NM"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NS> a skos:Concept ;
+    skos:altLabel "NS" ;
+    skos:prefLabel "NS"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NT> a skos:Concept ;
+    skos:altLabel "NT" ;
+    skos:prefLabel "NT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NU> a skos:Concept ;
+    skos:altLabel "NU" ;
+    skos:prefLabel "NU"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NV> a skos:Concept ;
+    skos:altLabel "NV" ;
+    skos:prefLabel "NV"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/NY> a skos:Concept ;
+    skos:altLabel "NY" ;
+    skos:prefLabel "NY"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Neck> a skos:Concept ;
+    skos:altLabel "NCK",
+        "NECK" ;
+    skos:prefLabel "neck"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/OH> a skos:Concept ;
+    skos:altLabel "OH" ;
+    skos:prefLabel "OH"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/OK> a skos:Concept ;
+    skos:altLabel "OK" ;
+    skos:prefLabel "OK"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/ON> a skos:Concept ;
+    skos:altLabel "ON" ;
+    skos:prefLabel "ON"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/OR> a skos:Concept ;
+    skos:altLabel "OR" ;
+    skos:prefLabel "OR"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Orchard> a skos:Concept ;
+    skos:altLabel "ORCH",
+        "ORCHARD",
+        "ORCHRD" ;
+    skos:prefLabel "orchard"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Oval> a skos:Concept ;
+    skos:altLabel "OVAL",
+        "OVL" ;
+    skos:prefLabel "oval"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Overpass> a skos:Concept ;
+    skos:altLabel "OPAS",
+        "OVERPASS" ;
+    skos:prefLabel "overpass"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/PA> a skos:Concept ;
+    skos:altLabel "PA" ;
+    skos:prefLabel "PA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/PE> a skos:Concept ;
+    skos:altLabel "PE" ;
+    skos:prefLabel "PE"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/PR> a skos:Concept ;
+    skos:altLabel "PR" ;
+    skos:prefLabel "PR"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Park> a skos:Concept ;
+    skos:altLabel "PARK",
+        "PRK" ;
+    skos:prefLabel "park"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Parks> a skos:Concept ;
+    skos:altLabel "PARK",
+        "PARKS" ;
+    skos:prefLabel "parks"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Parkway> a skos:Concept ;
+    skos:altLabel "PARKWAY",
+        "PARKWY",
+        "PKWAY",
+        "PKWY",
+        "PKY" ;
+    skos:prefLabel "parkway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Parkways> a skos:Concept ;
+    skos:altLabel "PARKWAYS",
+        "PKWY",
+        "PKWYS" ;
+    skos:prefLabel "parkways"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Pass> a skos:Concept ;
+    skos:altLabel "PASS" ;
+    skos:prefLabel "pass"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Passage> a skos:Concept ;
+    skos:altLabel "PASSAGE",
+        "PSGE" ;
+    skos:prefLabel "passage"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Path> a skos:Concept ;
+    skos:altLabel "PATH",
+        "PATHS" ;
+    skos:prefLabel "path"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Pike> a skos:Concept ;
+    skos:altLabel "PIKE",
+        "PIKES" ;
+    skos:prefLabel "pike"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Pine> a skos:Concept ;
+    skos:altLabel "PINE",
+        "PNE" ;
+    skos:prefLabel "pine"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Pines> a skos:Concept ;
+    skos:altLabel "PINES",
+        "PNES" ;
+    skos:prefLabel "pines"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Place> a skos:Concept ;
+    skos:altLabel "PL" ;
+    skos:prefLabel "place"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Plain> a skos:Concept ;
+    skos:altLabel "PLAIN",
+        "PLN" ;
+    skos:prefLabel "plain"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Plains> a skos:Concept ;
+    skos:altLabel "PLAINS",
+        "PLNS" ;
+    skos:prefLabel "plains"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Plaza> a skos:Concept ;
+    skos:altLabel "PLAZA",
+        "PLZ",
+        "PLZA" ;
+    skos:prefLabel "plaza"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Point> a skos:Concept ;
+    skos:altLabel "POINT",
+        "PT" ;
+    skos:prefLabel "point"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Points> a skos:Concept ;
+    skos:altLabel "POINTS",
+        "PTS" ;
+    skos:prefLabel "points"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Port> a skos:Concept ;
+    skos:altLabel "PORT",
+        "PRT" ;
+    skos:prefLabel "port"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ports> a skos:Concept ;
+    skos:altLabel "PORTS",
+        "PRTS" ;
+    skos:prefLabel "ports"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Prairie> a skos:Concept ;
+    skos:altLabel "PR",
+        "PRAIRIE",
+        "PRR" ;
+    skos:prefLabel "prairie"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/QC> a skos:Concept ;
+    skos:altLabel "QC" ;
+    skos:prefLabel "QC"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/RI> a skos:Concept ;
+    skos:altLabel "RI" ;
+    skos:prefLabel "RI"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Radial> a skos:Concept ;
+    skos:altLabel "RAD",
+        "RADIAL",
+        "RADIEL",
+        "RADL" ;
+    skos:prefLabel "radial"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ramp> a skos:Concept ;
+    skos:altLabel "RAMP" ;
+    skos:prefLabel "ramp"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ranch> a skos:Concept ;
+    skos:altLabel "RANCH",
+        "RANCHES",
+        "RNCH",
+        "RNCHS" ;
+    skos:prefLabel "ranch"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Rapid> a skos:Concept ;
+    skos:altLabel "RAPID",
+        "RPD" ;
+    skos:prefLabel "rapid"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Rapids> a skos:Concept ;
+    skos:altLabel "RAPIDS",
+        "RPDS" ;
+    skos:prefLabel "rapids"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Rest> a skos:Concept ;
+    skos:altLabel "REST",
+        "RST" ;
+    skos:prefLabel "rest"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ridge> a skos:Concept ;
+    skos:altLabel "RDG",
+        "RDGE",
+        "RIDGE" ;
+    skos:prefLabel "ridge"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ridges> a skos:Concept ;
+    skos:altLabel "RDGS",
+        "RIDGES" ;
+    skos:prefLabel "ridges"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/River> a skos:Concept ;
+    skos:altLabel "RIV",
+        "RIVER",
+        "RIVR",
+        "RVR" ;
+    skos:prefLabel "river"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Road> a skos:Concept ;
+    skos:altLabel "RD",
+        "ROAD" ;
+    skos:prefLabel "road"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Roads> a skos:Concept ;
+    skos:altLabel "RDS",
+        "ROADS" ;
+    skos:prefLabel "roads"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Route> a skos:Concept ;
+    skos:altLabel "ROUTE",
+        "RTE" ;
+    skos:prefLabel "route"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Row> a skos:Concept ;
+    skos:altLabel "ROW" ;
+    skos:prefLabel "row"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Rue> a skos:Concept ;
+    skos:altLabel "RUE" ;
+    skos:prefLabel "rue"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Run> a skos:Concept ;
+    skos:altLabel "RUN" ;
+    skos:prefLabel "run"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/SC> a skos:Concept ;
+    skos:altLabel "SC" ;
+    skos:prefLabel "SC"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/SD> a skos:Concept ;
+    skos:altLabel "SD" ;
+    skos:prefLabel "SD"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/SK> a skos:Concept ;
+    skos:altLabel "SK" ;
+    skos:prefLabel "SK"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Shoal> a skos:Concept ;
+    skos:altLabel "SHL",
+        "SHOAL" ;
+    skos:prefLabel "shoal"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Shoals> a skos:Concept ;
+    skos:altLabel "SHLS",
+        "SHOALS" ;
+    skos:prefLabel "shoals"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Shore> a skos:Concept ;
+    skos:altLabel "SHOAR",
+        "SHORE",
+        "SHR" ;
+    skos:prefLabel "shore"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Shores> a skos:Concept ;
+    skos:altLabel "SHOARS",
+        "SHORES",
+        "SHRS" ;
+    skos:prefLabel "shores"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Skyway> a skos:Concept ;
+    skos:altLabel "SKWY",
+        "SKYWAY" ;
+    skos:prefLabel "skyway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Spring> a skos:Concept ;
+    skos:altLabel "SPG",
+        "SPNG",
+        "SPRING",
+        "SPRNG" ;
+    skos:prefLabel "spring"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Springs> a skos:Concept ;
+    skos:altLabel "SPGS",
+        "SPNGS",
+        "SPRINGS",
+        "SPRNGS" ;
+    skos:prefLabel "springs"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Spur> a skos:Concept ;
+    skos:altLabel "SPUR" ;
+    skos:prefLabel "spur"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Spurs> a skos:Concept ;
+    skos:altLabel "SPUR",
+        "SPURS" ;
+    skos:prefLabel "spurs"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Square> a skos:Concept ;
+    skos:altLabel "SQ",
+        "SQR",
+        "SQRE",
+        "SQU",
+        "SQUARE" ;
+    skos:prefLabel "square"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Squares> a skos:Concept ;
+    skos:altLabel "SQRS",
+        "SQS",
+        "SQUARES" ;
+    skos:prefLabel "squares"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Station> a skos:Concept ;
+    skos:altLabel "STA",
+        "STATION",
+        "STATN",
+        "STN" ;
+    skos:prefLabel "station"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Stravenue> a skos:Concept ;
+    skos:altLabel "STRA",
+        "STRAV",
+        "STRAVEN",
+        "STRAVENUE",
+        "STRAVN",
+        "STRVN",
+        "STRVNUE" ;
+    skos:prefLabel "stravenue"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Stream> a skos:Concept ;
+    skos:altLabel "STREAM",
+        "STREME",
+        "STRM" ;
+    skos:prefLabel "stream"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Street> a skos:Concept ;
+    skos:altLabel "ST",
+        "STR",
+        "STREET",
+        "STRT" ;
+    skos:prefLabel "street"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Streets> a skos:Concept ;
+    skos:altLabel "STREETS",
+        "STS" ;
+    skos:prefLabel "streets"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Summit> a skos:Concept ;
+    skos:altLabel "SMT",
+        "SUMIT",
+        "SUMITT",
+        "SUMMIT" ;
+    skos:prefLabel "summit"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/TN> a skos:Concept ;
+    skos:altLabel "TN" ;
+    skos:prefLabel "TN"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/TX> a skos:Concept ;
+    skos:altLabel "TX" ;
+    skos:prefLabel "TX"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Terrace> a skos:Concept ;
+    skos:altLabel "TER",
+        "TERR",
+        "TERRACE" ;
+    skos:prefLabel "terrace"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Throughway> a skos:Concept ;
+    skos:altLabel "THROUGHWAY",
+        "TRWY" ;
+    skos:prefLabel "throughway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Trace> a skos:Concept ;
+    skos:altLabel "TRACE",
+        "TRACES",
+        "TRCE" ;
+    skos:prefLabel "trace"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Track> a skos:Concept ;
+    skos:altLabel "TRACK",
+        "TRACKS",
+        "TRAK",
+        "TRK",
+        "TRKS" ;
+    skos:prefLabel "track"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Trafficway> a skos:Concept ;
+    skos:altLabel "TRAFFICWAY",
+        "TRFY" ;
+    skos:prefLabel "trafficway"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Trail> a skos:Concept ;
+    skos:altLabel "TRAIL",
+        "TRAILS",
+        "TRL",
+        "TRLS" ;
+    skos:prefLabel "trail"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Trailer> a skos:Concept ;
+    skos:altLabel "TRAILER",
+        "TRLR",
+        "TRLRS" ;
+    skos:prefLabel "trailer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Tunnel> a skos:Concept ;
+    skos:altLabel "TUNEL",
+        "TUNL",
+        "TUNLS",
+        "TUNNEL",
+        "TUNNELS",
+        "TUNNL" ;
+    skos:prefLabel "tunnel"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Turnpike> a skos:Concept ;
+    skos:altLabel "TPKE",
+        "TRNPK",
+        "TURNPIKE",
+        "TURNPK" ;
+    skos:prefLabel "turnpike"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/UM> a skos:Concept ;
+    skos:altLabel "UM" ;
+    skos:prefLabel "UM"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/US-AA> a skos:Concept ;
+    skos:altLabel "AA" ;
+    skos:prefLabel "US-AA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/US-AE> a skos:Concept ;
+    skos:altLabel "AE" ;
+    skos:prefLabel "US-AE"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/US-AP> a skos:Concept ;
+    skos:altLabel "AP" ;
+    skos:prefLabel "US-AP"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/UT> a skos:Concept ;
+    skos:altLabel "UT" ;
+    skos:prefLabel "UT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Underpass> a skos:Concept ;
+    skos:altLabel "UNDERPASS",
+        "UPAS" ;
+    skos:prefLabel "underpass"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Union> a skos:Concept ;
+    skos:altLabel "UN",
+        "UNION" ;
+    skos:prefLabel "union"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Unions> a skos:Concept ;
+    skos:altLabel "UNIONS",
+        "UNS" ;
+    skos:prefLabel "unions"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/VA> a skos:Concept ;
+    skos:altLabel "VA" ;
+    skos:prefLabel "VA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/VI> a skos:Concept ;
+    skos:altLabel "VI" ;
+    skos:prefLabel "VI"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/VT> a skos:Concept ;
+    skos:altLabel "VT" ;
+    skos:prefLabel "VT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Valley> a skos:Concept ;
+    skos:altLabel "VALLEY",
+        "VALLY",
+        "VLLY",
+        "VLY" ;
+    skos:prefLabel "valley"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Valleys> a skos:Concept ;
+    skos:altLabel "VALLEYS",
+        "VLYS" ;
+    skos:prefLabel "valleys"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Viaduct> a skos:Concept ;
+    skos:altLabel "VDCT",
+        "VIA",
+        "VIADCT",
+        "VIADUCT" ;
+    skos:prefLabel "viaduct"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/View> a skos:Concept ;
+    skos:altLabel "VIEW",
+        "VW" ;
+    skos:prefLabel "view"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Views> a skos:Concept ;
+    skos:altLabel "VIEWS",
+        "VWS" ;
+    skos:prefLabel "views"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Village> a skos:Concept ;
+    skos:altLabel "VILL",
+        "VILLAG",
+        "VILLAGE",
+        "VILLG",
+        "VILLIAGE",
+        "VLG" ;
+    skos:prefLabel "village"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Villages> a skos:Concept ;
+    skos:altLabel "VILLAGES",
+        "VLGS" ;
+    skos:prefLabel "villages"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ville> a skos:Concept ;
+    skos:altLabel "VILLE",
+        "VL" ;
+    skos:prefLabel "ville"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Vista> a skos:Concept ;
+    skos:altLabel "VIS",
+        "VIST",
+        "VISTA",
+        "VST",
+        "VSTA" ;
+    skos:prefLabel "vista"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/WA> a skos:Concept ;
+    skos:altLabel "WA" ;
+    skos:prefLabel "WA"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/WI> a skos:Concept ;
+    skos:altLabel "WI" ;
+    skos:prefLabel "WI"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/WV> a skos:Concept ;
+    skos:altLabel "WV" ;
+    skos:prefLabel "WV"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/WY> a skos:Concept ;
+    skos:altLabel "WY" ;
+    skos:prefLabel "WY"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Walk> a skos:Concept ;
+    skos:altLabel "WALK" ;
+    skos:prefLabel "walk"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Walks> a skos:Concept ;
+    skos:altLabel "WALK",
+        "WALKS" ;
+    skos:prefLabel "walks"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Wall> a skos:Concept ;
+    skos:altLabel "WALL" ;
+    skos:prefLabel "wall"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Way> a skos:Concept ;
+    skos:altLabel "WAY",
+        "WY" ;
+    skos:prefLabel "way"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Ways> a skos:Concept ;
+    skos:altLabel "WAYS" ;
+    skos:prefLabel "ways"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Well> a skos:Concept ;
+    skos:altLabel "WELL",
+        "WL" ;
+    skos:prefLabel "well"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/Wells> a skos:Concept ;
+    skos:altLabel "WELLS",
+        "WLS" ;
+    skos:prefLabel "wells"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/YT> a skos:Concept ;
+    skos:altLabel "YT" ;
+    skos:prefLabel "YT"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Places/VirtualPlaces/hasURL> a skos:Concept ;
+    skos:altLabel "has uniform resource locator" ;
+    skos:prefLabel "has URL"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Buyer> a skos:Concept ;
+    skos:altLabel "buyer",
+        "purchaser" ;
+    skos:prefLabel "buyer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/CustomProduct> a skos:Concept ;
+    skos:altLabel "bespoke product",
+        "custom-made product",
+        "made to order product" ;
+    skos:prefLabel "custom product"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/OffTheShelfProduct> a skos:Concept ;
+    skos:altLabel "commercial off-the-shelf product",
+        "commercially available off-the-shelf product" ;
+    skos:prefLabel "off-the-shelf product"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Seller> a skos:Concept ;
+    skos:altLabel "purveyor",
+        "vendor" ;
+    skos:prefLabel "seller"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/ServiceAgreement> a skos:Concept ;
+    skos:altLabel "service contract" ;
+    skos:prefLabel "service agreement"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Quantities/QuantitiesAndUnits/QuantityValue> a skos:Concept ;
+    skos:altLabel "measurement" ;
+    skos:prefLabel "quantity value"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/confers> a skos:Concept ;
+    skos:altLabel "invests with" ;
+    skos:prefLabel "confers"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Aspect> a skos:Concept ;
+    skos:altLabel "dimension",
+        "filter" ;
+    skos:prefLabel "aspect"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/AverageAbsoluteDeviation> a skos:Concept ;
+    skos:altLabel "mean absolute deviation" ;
+    skos:prefLabel "average absolute deviation"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Formula> a skos:Concept ;
+    skos:altLabel "complex expression" ;
+    skos:prefLabel "formula"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Mean> a skos:Concept ;
+    skos:altLabel "expected value",
+        "first (raw) moment" ;
+    skos:prefLabel "mean"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Ratio> a skos:Concept ;
+    skos:altLabel "rate" ;
+    skos:prefLabel "ratio"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Variance> a skos:Concept ;
+    skos:altLabel "second moment" ;
+    skos:prefLabel "variance"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/hasArgument> a skos:Concept ;
+    skos:altLabel "has independent variable" ;
+    skos:prefLabel "has argument"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/CapitalLaborEnergyMaterialsMultifactorProductivity> a skos:Concept ;
+    skos:altLabel "KLEMS multifactor productivity" ;
+    skos:prefLabel "capital-labor-energy-materials multifactor productivity"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EmployedPopulationPartTime> a skos:Concept ;
+    skos:altLabel "population employed part-time" ;
+    skos:prefLabel "employed population part-time"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EmployedPopulationPartTimeForEconomicReasons> a skos:Concept ;
+    skos:altLabel "involuntary part-time population",
+        "population employed part-time for economic reasons" ;
+    skos:prefLabel "employed population part-time for economic reasons"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EmployedPopulationPartTimeForNonEconomicReasons> a skos:Concept ;
+    skos:altLabel "population employed part-time for non-economic reasons" ;
+    skos:prefLabel "employed population part-time for non-economic reasons"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EstablishmentEmployment> a skos:Concept ;
+    skos:altLabel "payroll employment" ;
+    skos:prefLabel "establishment employment"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/FixedBasket> a skos:Concept ;
+    skos:altLabel "basket of goods" ;
+    skos:prefLabel "fixed basket"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/FixedBasketPopulation> a skos:Concept ;
+    skos:altLabel "goods and services population",
+        "goods and/or services population" ;
+    skos:prefLabel "fixed basket population"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/UltimateConsumer> a skos:Concept ;
+    skos:altLabel "consumer as defined by the Consumer Price Index (CPI)" ;
+    skos:prefLabel "ultimate consumer"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/ForeignExchange/InternationalElectronicFundsTransferService> a skos:Concept ;
+    skos:altLabel "international wire transfer" ;
+    skos:prefLabel "international electronic funds transfer service"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/HistoricalVolatility> a skos:Concept ;
+    skos:altLabel "realized volatility" ;
+    skos:prefLabel "historical volatility"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/ImpliedVolatility> a skos:Concept ;
+    skos:altLabel "projected volatility" ;
+    skos:prefLabel "implied volatility"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/PriceStructure> a skos:Concept ;
+    skos:altLabel "price history" ;
+    skos:prefLabel "price structure"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/BaseRate> a skos:Concept ;
+    skos:altLabel "bank base rate" ;
+    skos:prefLabel "base rate"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/BasketIndices/MarketCapitalization> a skos:Concept ;
+    skos:altLabel "market cap"@en ;
+    skos:prefLabel "market capitalization"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/BasketIndices/ReferenceIndex> a skos:Concept ;
+    skos:altLabel "benchmark"@en ;
+    skos:prefLabel "reference index"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/LoanApplications/TotalDebtExpenseRatio> a skos:Concept ;
+    skos:altLabel "back end ratio" ;
+    skos:prefLabel "total debt expense ratio"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/Comaker> a skos:Concept ;
+    skos:altLabel "comaker",
+        "cosigner" ;
+    skos:prefLabel "co-maker"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/FeeSimpleOwnershipInterest> a skos:Concept ;
+    skos:altLabel "complete ownership" ;
+    skos:prefLabel "fee-simple ownership interest"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/OpenEndCredit> a skos:Concept ;
+    skos:altLabel "charge account credit",
+        "revolving credit" ;
+    skos:prefLabel "open-end credit"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansGeneral/Loans/PrimaryLienPosition> a skos:Concept ;
+    skos:altLabel "primary lien priority" ;
+    skos:prefLabel "primary lien position"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CommercialLoans/CommercialLoan> a skos:Concept ;
+    skos:altLabel "commercial and industrial loan"@en ;
+    skos:prefLabel "commercial loan"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/ConstructionLoans/ConstructionLoan> a skos:Concept ;
+    skos:altLabel "construction mortgage"@en ;
+    skos:prefLabel "construction loan"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/LOAN/RealEstateLoans/MortgageLoans/AutomatedUnderwritingSystem-GuaranteedUnderwritingSystem> a skos:Concept ;
+    skos:altLabel "GUS" ;
+    skos:prefLabel "Guaranteed Underwriting System"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/MD/DerivativesTemporal/FuturesTemporal/InitialMargin> a skos:Concept ;
+    skos:altLabel "security deposit"@en ;
+    skos:prefLabel "initial margin"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondCoupon> a skos:Concept ;
+    skos:altLabel "coupon percent rate",
+        "coupon rate",
+        "nominal yield" ;
+    skos:prefLabel "bond coupon"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/FullFaithCreditBond> a skos:Concept ;
+    skos:altLabel "full faith and credit bond" ;
+    skos:prefLabel "full faith credit bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/GovernmentBond> a skos:Concept ;
+    skos:altLabel "government-issued bond" ;
+    skos:prefLabel "government bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ImplicitFullFaithCreditBond> a skos:Concept ;
+    skos:altLabel "implicit full faith and credit bond" ;
+    skos:prefLabel "implicit full faith credit bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/InflationLinkedBond> a skos:Concept ;
+    skos:altLabel "inflation-indexed bond" ;
+    skos:prefLabel "inflation-linked bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/OriginalIssueDiscountBond> a skos:Concept ;
+    skos:altLabel "OID bond" ;
+    skos:prefLabel "original issue discount bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/PerpetualBond> a skos:Concept ;
+    skos:altLabel "consul" ;
+    skos:prefLabel "perpetual bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/StepUpBond> a skos:Concept ;
+    skos:altLabel "step down bond" ;
+    skos:prefLabel "step up bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/UKGovernmentSecurity> a skos:Concept ;
+    skos:altLabel "gilt",
+        "gilt-edged security" ;
+    skos:prefLabel "U.K. Government security"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/UnlistedBond> a skos:Concept ;
+    skos:altLabel "OTC Bond" ;
+    skos:prefLabel "unlisted bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/UnsecuredBond> a skos:Concept ;
+    skos:altLabel "debenture" ;
+    skos:prefLabel "unsecured bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/ZeroCouponBond> a skos:Concept ;
+    skos:altLabel "z-bond" ;
+    skos:prefLabel "zero coupon bond"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasAwardDate> a skos:Concept ;
+    skos:altLabel "has sale date" ;
+    skos:prefLabel "has award date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/hasCallPrice> a skos:Concept ;
+    skos:altLabel "has redemption price" ;
+    skos:prefLabel "has call price"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtADiscount> a skos:Concept ;
+    skos:altLabel "below par" ;
+    skos:prefLabel "at a discount"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtAPremium> a skos:Concept ;
+    skos:altLabel "above par",
+        "premium" ;
+    skos:prefLabel "at a premium"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature> a skos:Concept ;
+    skos:altLabel "call provision" ;
+    skos:prefLabel "call feature"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/InterestOnlyStrip> a skos:Concept ;
+    skos:altLabel "IO strip"@en ;
+    skos:prefLabel "interest-only strip"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/MakeWholeFeature> a skos:Concept ;
+    skos:altLabel "make whole provision" ;
+    skos:prefLabel "make whole feature"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Margin> a skos:Concept ;
+    skos:altLabel "spread" ;
+    skos:prefLabel "margin"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue> a skos:Concept ;
+    skos:altLabel "face value",
+        "nominal value",
+        "par" ;
+    skos:prefLabel "par value"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature> a skos:Concept ;
+    skos:altLabel "put provision" ;
+    skos:prefLabel "put feature"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Strip> a skos:Concept ;
+    skos:altLabel "Separate Trading of Registered Interest and Principal of Securities"@en ;
+    skos:prefLabel "strip"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/PrincipalProtectedNote> a skos:Concept ;
+    skos:altLabel "capital protected note"@en ;
+    skos:prefLabel "principal protected note"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/StructuredFinanceInstrument> a skos:Concept ;
+    skos:altLabel "structured finance"@en ;
+    skos:prefLabel "structured finance instrument"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/StructuredFinanceWithoutPrincipalProtection> a skos:Concept ;
+    skos:altLabel "structured finance without capital protection"@en ;
+    skos:prefLabel "structured finance without principal protection"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/BillOfExchange> a skos:Concept ;
+    skos:altLabel "bank draft"@en,
+        "draft"@en ;
+    skos:prefLabel "bill of exchange"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/DepositaryReceipt> a skos:Concept ;
+    skos:altLabel "depositary receipt"@en ;
+    skos:prefLabel "depositary receipt"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/GlobalDepositaryReceipt> a skos:Concept ;
+    skos:altLabel "international depositary receipt"@en ;
+    skos:prefLabel "global depositary receipt"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/DepositaryReceipts/ParticipatoryNote> a skos:Concept ;
+    skos:altLabel "participation note"@en ;
+    skos:prefLabel "participatory note"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PreferredShare> a skos:Concept ;
+    skos:altLabel "preference share" ;
+    skos:prefLabel "preferred share"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/PricePerShare> a skos:Concept ;
+    skos:altLabel "share price" ;
+    skos:prefLabel "price per share"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/RedeemablePreferredShareWithExtendableRedemptionDate> a skos:Concept ;
+    skos:altLabel "extendible preferred share" ;
+    skos:prefLabel "redeemable preferred share with extendable redemption date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/RetractablePreferredShareWithExtendableRedemptionDate> a skos:Concept ;
+    skos:altLabel "extendible preferred share" ;
+    skos:prefLabel "retractable preferred share with extendable redemption date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareYield> a skos:Concept ;
+    skos:altLabel "dividend yield"@en,
+        "dividend-price ratio"@en ;
+    skos:prefLabel "share yield"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasDividendDeclarationDate> a skos:Concept ;
+    skos:altLabel "has announcement date" ;
+    skos:prefLabel "has declaration date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasExDividendDate> a skos:Concept ;
+    skos:altLabel "has ex-date",
+        "has expected dividend date" ;
+    skos:prefLabel "has ex-dividend date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasRecordDate> a skos:Concept ;
+    skos:altLabel "has date of record" ;
+    skos:prefLabel "has record date"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/ClosedEndInvestment> a skos:Concept ;
+    skos:altLabel "closed-end fund"@en ;
+    skos:prefLabel "closed-end investment"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/FundOfFunds> a skos:Concept ;
+    skos:altLabel "umbrella fund"@en ;
+    skos:prefLabel "fund of funds"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/MutualFund> a skos:Concept ;
+    skos:altLabel "standard (vanilla) investment fund"@en ;
+    skos:prefLabel "mutual fund"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/OpenEndInvestment> a skos:Concept ;
+    skos:altLabel "open-end fund"@en ;
+    skos:prefLabel "open-end investment"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/Funds/SovereignWealthFund> a skos:Concept ;
+    skos:altLabel "social wealth fund"@en,
+        "sovereign investment fund"@en ;
+    skos:prefLabel "sovereign wealth fund"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/ManagedInvestment> a skos:Concept ;
+    skos:altLabel "investment fund"@en ;
+    skos:prefLabel "managed investment"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Pools/PooledFund> a skos:Concept ;
+    skos:altLabel "fund"@en ;
+    skos:prefLabel "pooled fund"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CUSIPInternationalNumberingSystemNumber> a skos:Concept ;
+    skos:altLabel "CINS number" ;
+    skos:prefLabel "CUSIP International Numbering System (CINS) number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber> a skos:Concept ;
+    skos:altLabel "CUSIP number" ;
+    skos:prefLabel "Committee on Uniform Securities Identification Procedures (CUSIP) number"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/EuroclearClearstreamCommonCode> a skos:Concept ;
+    skos:altLabel "common code" ;
+    skos:prefLabel "Euroclear Clearstream common code"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/EuroclearClearstreamCommonCodeScheme> a skos:Concept ;
+    skos:altLabel "common code scheme" ;
+    skos:prefLabel "Euroclear Clearstream common code scheme"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/Valoren> a skos:Concept ;
+    skos:altLabel "Valor"@en,
+        "Valor Code"@en,
+        "Valoren Code"@en,
+        "Valoren Number"@en ;
+    skos:prefLabel "Valoren"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm> a skos:Concept ;
+    skos:altLabel "registered form" ;
+    skos:prefLabel "book entry form"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/PrivateOffering> a skos:Concept ;
+    skos:altLabel "private placement" ;
+    skos:prefLabel "private offering"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/PrivatePlacementMemorandum> a skos:Concept ;
+    skos:altLabel "offering memorandum" ;
+    skos:prefLabel "private placement memorandum"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity> a skos:Concept ;
+    skos:altLabel "exchange-traded security" ;
+    skos:prefLabel "listed security"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing> a skos:Concept ;
+    skos:altLabel "market listing"@en ;
+    skos:prefLabel "listing"@en .
+
+<https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange> a skos:Concept ;
+    skos:altLabel "has primary market",
+        "has primary trading market" ;
+    skos:prefLabel "has home exchange"@en .
+
