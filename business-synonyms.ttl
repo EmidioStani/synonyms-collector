@@ -1,7 +1,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/2001/02pd/rec54#> .
-@prefix ns2: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://www.w3.org/2001/02pd/rec54#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,11 +9,12 @@
 
 <http://www.w3.org/ns/legal#LegalEntity> a rdfs:Class ;
     rdfs:label "Legal Entity"@en ;
-    ns2:altLabel "artificial person"@en,
+    ns1:altLabel "artificial person"@en,
         "corporation"@en,
         "juridical entity"@en,
         "juridical person"@en,
-        "juristic person"@en .
+        "juristic person"@en,
+        "legal status"@en .
 
 <https://data.europa.eu/m8g/identifies> a owl:ObjectProperty ;
     rdfs:domain <http://www.w3.org/ns/adms#Identifier> ;
@@ -22,20 +23,24 @@
 
 dc:alternative a rdf:Property ;
     rdfs:label "alternative name"@en ;
-    ns2:altLabel "alias"@en,
+    ns1:altLabel "alias"@en,
         "pseudonym"@en .
 
 <http://www.w3.org/ns/legal#companyActivity> a rdf:Property ;
-    rdfs:label "legal entity activity"@en .
+    rdfs:label "legal entity activity"@en ;
+    ns1:altLabel "legal entity activity"@en .
 
 <http://www.w3.org/ns/legal#companyStatus> a rdf:Property ;
-    rdfs:label "legal entity status"@en .
+    rdfs:label "legal entity status"@en ;
+    ns1:altLabel "legal entity status"@en .
 
 <http://www.w3.org/ns/legal#companyType> a rdf:Property ;
-    rdfs:label "legal form type"@en .
+    rdfs:label "legal form type"@en ;
+    ns1:altLabel "legal form type"@en .
 
 <http://www.w3.org/ns/legal#legalName> a rdf:Property ;
-    rdfs:label "legal name"@en .
+    rdfs:label "legal name"@en ;
+    ns1:altLabel "legal name"@en .
 
 <https://data.europa.eu/m8g> a owl:Ontology ;
     rdfs:label "core-business"@en,
@@ -55,7 +60,7 @@ dc:alternative a rdf:Property ;
         <http://www.w3.org/ns/legal#companyStatus>,
         <http://www.w3.org/ns/legal#companyType>,
         <http://www.w3.org/ns/legal#legalName> ;
-    ns1:editor [ a foaf:Person ;
+    ns2:editor [ a foaf:Person ;
             foaf:firstName "Pavlina" ;
             foaf:lastName "Fragkou" ;
             schemas:affiliation [ foaf:name "European Commission" ] ],
@@ -83,6 +88,7 @@ dc:alternative a rdf:Property ;
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    ns1:altLabel "core-business"@en ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 

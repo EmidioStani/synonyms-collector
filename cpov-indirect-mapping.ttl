@@ -1,0 +1,18 @@
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/ontology/description> rdfs:label "description"@en ;
+    owl:equivalentProperty <http://schema.org/description> .
+
+<http://www.wikidata.org/entity/Q65971553> rdfs:label "has member"@en ;
+    ns1:P2888 <https://schema.org/member> .
+
+<https://schema.org/caption> rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
+
+<https://schema.org/description> owl:equivalentProperty <http://purl.org/dc/terms/description> .
+
+<https://schema.org/memberOf> owl:equivalentProperty <https://www.wikidata.org/wiki/Property:P463> .
+
+<https://www.wikidata.org/wiki/Property:P463> rdfs:label "member of" .
+

@@ -1,6 +1,6 @@
 input:
   file: 
-    name: "core-public-event-ap.ttl"
+    name: "core-public-organisation-ap.ttl"
     format: "ttl"
   repository:
     - name: "Wordnet"
@@ -23,10 +23,10 @@ input:
     altervista: 
       endpoint: "http://thesaurus.altervista.org/thesaurus/v1"
       key: "Kdnuiqz85LO7gGIHdGZf"
-alternative: "skosxl"
+alternative: "skos"
 skosxl:
   baseuri: "http://example.com/label/"
 output:
   file: 
-    name: "cpev-synonyms-skosxl6.ttl"
+    name: "cpov-synonyms.ttl"
     format: "ttl"

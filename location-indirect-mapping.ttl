@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/ontology/address> rdfs:label "address"@en ;
+    owl:equivalentProperty <http://schema.org/address> .
+
+<http://www.wikidata.org/entity/Q319608> rdfs:label "address"@en ;
+    ns1:P1709 <https://schema.org/PostalAddress> .
+
+<https://schema.org/PostalAddress> owl:equivalentClass <https://www.wikidata.org/wiki/Q319608> .
+
+<https://www.wikidata.org/wiki/Q319608> rdfs:label "address" .
+

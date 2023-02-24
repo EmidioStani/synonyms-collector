@@ -1,0 +1,40 @@
+@prefix ns1: <http://www.wikidata.org/prop/direct/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://dbpedia.org/ontology/Person> rdfs:label "person"@en ;
+    owl:equivalentClass <http://schema.org/Person> .
+
+<http://dbpedia.org/ontology/gender> rdfs:label "gender"@en ;
+    owl:equivalentProperty <http://schema.org/gender> .
+
+<http://dbpedia.org/ontology/شخص> rdfs:label "person"@en ;
+    owl:equivalentClass <http://schema.org/Person> .
+
+<http://www.wikidata.org/entity/Q853614> rdfs:label "identifier"@en ;
+    ns1:P2888 <https://schema.org/identifier> .
+
+<https://schema.org/Person> owl:equivalentClass <https://www.wikidata.org/wiki/Q215627> .
+
+<https://schema.org/birthDate> owl:equivalentProperty <https://www.wikidata.org/wiki/Property:P569> .
+
+<https://schema.org/birthPlace> owl:equivalentProperty <https://www.wikidata.org/wiki/Property:P19> .
+
+<https://schema.org/deathDate> owl:equivalentProperty <https://www.wikidata.org/wiki/Property:P570> .
+
+<https://schema.org/deathPlace> owl:equivalentProperty <https://www.wikidata.org/wiki/Property:P20> .
+
+<https://schema.org/productId> rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+<https://schema.org/url> rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> .
+
+<https://www.wikidata.org/wiki/Property:P19> rdfs:label "place of birth" .
+
+<https://www.wikidata.org/wiki/Property:P20> rdfs:label "place of death" .
+
+<https://www.wikidata.org/wiki/Property:P569> rdfs:label "date of birth" .
+
+<https://www.wikidata.org/wiki/Property:P570> rdfs:label "date of death" .
+
+<https://www.wikidata.org/wiki/Q215627> rdfs:label "person" .
+

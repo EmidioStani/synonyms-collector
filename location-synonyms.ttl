@@ -103,34 +103,44 @@
         "administrative district"@en .
 
 <http://www.opengis.net/ont/geosparql#asGML> a rdf:Property ;
-    rdfs:label "gml"@en .
+    rdfs:label "gml"@en ;
+    skos:altLabel "gml"@en .
 
 <http://www.opengis.net/ont/geosparql#asWKT> a rdf:Property ;
-    rdfs:label "wkt"@en .
+    rdfs:label "wkt"@en ;
+    skos:altLabel "wkt"@en .
 
 <http://www.w3.org/ns/locn#addressArea> a rdf:Property ;
-    rdfs:label "address area"@en .
+    rdfs:label "address area"@en ;
+    skos:altLabel "address area"@en .
 
 <http://www.w3.org/ns/locn#addressId> a rdf:Property ;
-    rdfs:label "address ID"@en .
+    rdfs:label "address ID"@en ;
+    skos:altLabel "address id"@en .
 
 <http://www.w3.org/ns/locn#adminUnitL1> a rdf:Property ;
-    rdfs:label "administrative unit level 1"@en .
+    rdfs:label "administrative unit level 1"@en ;
+    skos:altLabel "administrative unit level 1"@en .
 
 <http://www.w3.org/ns/locn#adminUnitL2> a rdf:Property ;
-    rdfs:label "administrative unit level 2"@en .
+    rdfs:label "administrative unit level 2"@en ;
+    skos:altLabel "administrative unit level 2"@en .
 
 <http://www.w3.org/ns/locn#fullAddress> a rdf:Property ;
-    rdfs:label "full address"@en .
+    rdfs:label "full address"@en ;
+    skos:altLabel "full address"@en .
 
 <http://www.w3.org/ns/locn#locatorDesignator> a rdf:Property ;
-    rdfs:label "locator designator"@en .
+    rdfs:label "locator designator"@en ;
+    skos:altLabel "locator designator"@en .
 
 <http://www.w3.org/ns/locn#locatorName> a rdf:Property ;
-    rdfs:label "locator name"@en .
+    rdfs:label "locator name"@en ;
+    skos:altLabel "locator name"@en .
 
 <http://www.w3.org/ns/locn#poBox> a rdf:Property ;
-    rdfs:label "post office box"@en .
+    rdfs:label "post office box"@en ;
+    skos:altLabel "post office box"@en .
 
 <http://www.w3.org/ns/locn#postCode> a rdf:Property ;
     rdfs:label "post code"@en ;
@@ -144,10 +154,12 @@
         "zip code"@en .
 
 <http://www.w3.org/ns/locn#postName> a rdf:Property ;
-    rdfs:label "post name"@en .
+    rdfs:label "post name"@en ;
+    skos:altLabel "post name"@en .
 
 <http://www.w3.org/ns/locn#thoroughfare> a rdf:Property ;
-    rdfs:label "thoroughfare"@en .
+    rdfs:label "thoroughfare"@en ;
+    skos:altLabel "thoroughfare"@en .
 
 <http://data.europa.eu/m8g/AdminUnit> a owl:Class ;
     ns1:usageNote "This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text."@en ;
@@ -209,6 +221,7 @@
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    skos:altLabel "core-location"@en ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 

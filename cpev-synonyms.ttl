@@ -1,7 +1,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/2001/02pd/rec54#> .
-@prefix ns2: <http://purl.org/vocab/vann/> .
+@prefix ns1: <http://purl.org/vocab/vann/> .
+@prefix ns2: <http://www.w3.org/2001/02pd/rec54#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,7 +9,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <http://data.europa.eu/m8g/accessibility> a owl:DatatypeProperty ;
-    ns2:usageNote "This property may be provided in multiple languages with multiple instances of the accessibility property."@en ;
+    ns1:usageNote "This property may be provided in multiple languages with multiple instances of the accessibility property."@en ;
     rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range rdf:langString .
@@ -30,19 +30,19 @@
     rdfs:range rdfs:Literal .
 
 <http://data.europa.eu/m8g/eventNumber> a owl:DatatypeProperty ;
-    ns2:usageNote "Examples could be the ''4th\" or \"2022\"."@en ;
+    ns1:usageNote "Examples could be the ''4th\" or \"2022\"."@en ;
     rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range rdf:langString .
 
 <http://data.europa.eu/m8g/format> a owl:ObjectProperty ;
-    ns2:usageNote "Examples include conference call, physical meeting or hybrid."@en ;
+    ns1:usageNote "Examples include conference call, physical meeting or hybrid."@en ;
     rdfs:domain <http://data.europa.eu/m8g/PublicEvent> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range skos:Concept .
 
 <http://data.europa.eu/m8g/frequency> a owl:ObjectProperty ;
-    ns2:usageNote "It is recommended to use the frequency from an existing vocabulary like the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency\">Frequency</a> from the Publications Office."@en ;
+    ns1:usageNote "It is recommended to use the frequency from an existing vocabulary like the <a href=\"https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency\">Frequency</a> from the Publications Office."@en ;
     rdfs:domain <http://www.w3.org/2006/time#TemporalEntity> ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> ;
     rdfs:range skos:Concept .
@@ -66,13 +66,16 @@
     rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/hasNextEvent> a rdf:Property ;
-    rdfs:label "has next event"@en .
+    rdfs:label "has next event"@en ;
+    skos:altLabel "has next event"@en .
 
 <http://data.europa.eu/m8g/hasPreviousEvent> a rdf:Property ;
-    rdfs:label "has previous event"@en .
+    rdfs:label "has previous event"@en ;
+    skos:altLabel "has previous event"@en .
 
 <http://data.europa.eu/m8g/parentEvent> a rdf:Property ;
-    rdfs:label "parent event"@en .
+    rdfs:label "parent event"@en ;
+    skos:altLabel "parent event"@en .
 
 <http://data.europa.eu/m8g/subEvent> a rdf:Property ;
     rdfs:label "sub event"@en ;
@@ -81,48 +84,46 @@
 
 dc:description a rdf:Property ;
     rdfs:label "description"@en ;
-    skos:altLabel "kind"@en,
+    skos:altLabel "Description and travel"@en,
+        "kind"@en,
         "sort"@en,
         "type"@en,
         "variety"@en,
-        "verbal description"@en,
-        "verbal_description"@en .
+        "verbal description"@en .
 
 dc:identifier a rdf:Property ;
-    rdfs:label "identifier"@en .
+    rdfs:label "identifier"@en ;
+    skos:altLabel "identifier"@en .
 
 dc:language a rdf:Property ;
     rdfs:label "language"@en ;
     skos:altLabel "Language (New words, slang, etc.)"@en,
-        "computer_language"@en,
+        "computer language"@en,
+        "idiom"@en,
         "linguistic communication"@en,
         "linguistic process"@en,
-        "linguistic_communication"@en,
-        "linguistic_process"@en,
         "lyric"@en,
-        "machine_language"@en,
+        "machine language"@en,
         "nomenclature"@en,
         "oral communication"@en,
-        "oral_communication"@en,
-        "programming_language"@en,
+        "programming language"@en,
         "speech"@en,
         "speech communication"@en,
-        "speech_communication"@en,
         "spoken communication"@en,
         "spoken language"@en,
-        "spoken_communication"@en,
-        "spoken_language"@en,
         "terminology"@en,
         "voice communication"@en,
-        "voice_communication"@en,
         "words"@en .
 
 dc:subject a rdf:Property ;
     rdfs:label "topic"@en ;
     skos:altLabel "issue"@en,
+        "item"@en,
         "matter"@en,
+        "purpose"@en,
+        "question"@en,
         "subject"@en,
-        "subject_area"@en,
+        "subject area"@en,
         "theme"@en .
 
 dc:title a rdf:Property ;
@@ -131,27 +132,25 @@ dc:title a rdf:Property ;
         "claim"@en,
         "deed"@en,
         "deed of conveyance"@en,
-        "deed_of_conveyance"@en,
         "entitle"@en,
         "form of address"@en,
-        "form_of_address"@en,
+        "premiership"@en,
         "rubric"@en,
         "statute title"@en,
-        "statute_title"@en,
         "style"@en,
-        "title of respect"@en,
-        "title_of_respect"@en .
+        "title of respect"@en .
 
 dc:type a rdf:Property ;
-    rdfs:label "event type"@en .
+    rdfs:label "event type"@en ;
+    skos:altLabel "event type"@en .
 
 foaf:homepage a rdf:Property ;
     rdfs:label "homepage"@en ;
-    skos:altLabel "home page"@en,
-        "home_page"@en .
+    skos:altLabel "Website"@en,
+        "home page"@en .
 
 <http://data.europa.eu/m8g/ContactPoint> a owl:Class ;
-    ns2:usageNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en ;
+    ns1:usageNote "The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's ContactPoint class (http://schema.org/ContactPoint) that has additional properties that some implementations may find useful."@en ;
     rdfs:isDefinedBy <http://data.europa.eu/m8g> .
 
 <http://data.europa.eu/m8g/PublicEvent> a owl:Class ;
@@ -180,7 +179,7 @@ foaf:homepage a rdf:Property ;
         dc:title,
         dc:type,
         foaf:homepage ;
-    ns1:editor [ a foaf:Person ;
+    ns2:editor [ a foaf:Person ;
             foaf:firstName "Pavlina" ;
             foaf:lastName "Fragkou" ;
             schemas:affiliation [ foaf:name "European Commission" ] ],
@@ -208,6 +207,7 @@ foaf:homepage a rdf:Property ;
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    skos:altLabel "core-public-event"@en ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 

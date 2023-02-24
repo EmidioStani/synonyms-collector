@@ -9,12 +9,17 @@
 
 <http://www.w3.org/ns/person#Person> a rdfs:Class ;
     rdfs:label "Person"@en ;
-    ns1:altLabel "human"@en,
+    ns1:altLabel "Ningbonese"@en,
+        "Polack"@en,
+        "human"@en,
+        "human being"@en,
+        "hyphenate"@en,
         "individual"@en,
         "mortal"@en,
         "natural person"@en,
         "somebody"@en,
         "someone"@en,
+        "sort"@en,
         "soul"@en .
 
 <https://data.europa.eu/m8g> a owl:Ontology ;
@@ -75,12 +80,15 @@
             foaf:firstName "Dimitri" ;
             foaf:lastName "Schepers" ;
             schemas:affiliation [ foaf:name "PwC EU Services" ] ] ;
+    ns1:altLabel "core-person-voc"@en ;
     foaf:maker [ a foaf:Person ;
             foaf:firstName "Core Vocabularies Working Group" ] .
 
 <http://data.europa.eu/m8g/birthDate> a rdf:Property ;
     rdfs:label "date of birth"@en ;
-    ns1:altLabel "birthday"@en .
+    ns1:altLabel "Birth"@en,
+        "birth date"@en,
+        "birthday"@en .
 
 <http://data.europa.eu/m8g/deathDate> a rdf:Property ;
     rdfs:label "date of death"@en ;
@@ -94,11 +102,9 @@
         "domiciliate"@en,
         "dwelling"@en,
         "dwelling house"@en,
-        "dwelling_house"@en,
         "habitation"@en,
         "home"@en,
         "legal residence"@en,
-        "legal_residence"@en,
         "reside"@en,
         "shack"@en .
 
@@ -107,13 +113,13 @@
     ns1:altLabel "gendersex"@en,
         "genre"@en,
         "grammatical gender"@en,
-        "grammatical_gender"@en,
         "sex"@en,
         "sexuality"@en,
         "voice"@en .
 
 <http://data.europa.eu/m8g/matronymicName> a rdf:Property ;
-    rdfs:label "matronymic name"@en .
+    rdfs:label "matronymic name"@en ;
+    ns1:altLabel "matronymic name"@en .
 
 dc:alternative a rdf:Property ;
     rdfs:label "alternative name"@en ;
@@ -126,17 +132,21 @@ dc:citizenship a rdf:Property ;
         "Citizenship (International law)"@en,
         "Citizenship--Law and legislation"@en,
         "National citizenship"@en,
+        "Nationality"@en,
         "Nationality (Citizenship)"@en,
         "Naturalization"@en,
         "citizenhood"@en,
-        "freedom_of_the_city"@en,
-        "freemanship"@en .
+        "freedom of the city"@en,
+        "freemanship"@en,
+        "nationality"@en .
 
 dc:identifier a rdf:Property ;
-    rdfs:label "identifier"@en .
+    rdfs:label "identifier"@en ;
+    ns1:altLabel "identifier"@en .
 
 <http://www.w3.org/ns/person#birthName> a rdf:Property ;
-    rdfs:label "birth name"@en .
+    rdfs:label "birth name"@en ;
+    ns1:altLabel "birth name"@en .
 
 <http://www.w3.org/ns/person#countryOfBirth> a rdf:Property ;
     rdfs:label "country of birth"@en,
@@ -148,14 +158,18 @@ dc:identifier a rdf:Property ;
         "residence"@en .
 
 <http://www.w3.org/ns/person#countryOfDeath> a rdf:Property ;
-    rdfs:label "country of death"@en .
+    rdfs:label "country of death"@en ;
+    ns1:altLabel "country of death"@en .
 
 <http://www.w3.org/ns/person#patronymicName> a rdf:Property ;
-    rdfs:label "patronymic name"@en .
+    rdfs:label "patronymic name"@en ;
+    ns1:altLabel "patronymic name"@en .
 
 <http://www.w3.org/ns/person#placeOfBirth> a rdf:Property ;
     rdfs:label "place of birth"@en ;
-    ns1:altLabel "birthplace"@en .
+    ns1:altLabel "Birthplace"@en,
+        "birth place"@en,
+        "birthplace"@en .
 
 <http://www.w3.org/ns/person#placeOfDeath> a rdf:Property ;
     rdfs:label "place of death"@en ;
