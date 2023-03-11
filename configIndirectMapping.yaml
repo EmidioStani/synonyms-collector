@@ -1,6 +1,6 @@
 input:
   file: 
-    name: "core-public-organisation-ap.ttl"
+    name: "core-business-ap.ttl"
     format: "ttl"
   mapping:
     dcschema: "http://localhost:7200/repositories/mapping-dc-schema"
@@ -10,5 +10,5 @@ input:
     lov: "http://localhost:7200/repositories/lov"
 output:
   file: 
-    name: "cpov-indirect-mapping.ttl"
+    name: "business-indirect-mapping.ttl"
     format: "ttl"
