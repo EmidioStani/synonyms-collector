@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://purl.org/dc/terms/alternative"/>
+          <entity2 rdf:resource="https://schema.org/alternateName"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5294117647058822</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://purl.org/dc/terms/alternative"/>
+          <entity2 rdf:resource="https://schema.org/alternativeHeadline"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.040000000000000036</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://purl.org/dc/terms/alternative"/>
+          <entity2 rdf:resource="https://schema.org/alternativeOf"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5294117647058822</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/domicile"/>
+          <entity2 rdf:resource="https://schema.org/citation"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1428571428571428</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/givenName"/>
+          <entity2 rdf:resource="https://schema.org/givenName"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.19999999999999996</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/domicile"/>
+          <entity2 rdf:resource="https://schema.org/homeTeam"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/gender"/>
+          <entity2 rdf:resource="https://schema.org/gender"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/gender"/>
+          <entity2 rdf:resource="https://schema.org/lender"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.19999999999999996</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/gender"/>
+          <entity2 rdf:resource="https://schema.org/sender"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.19999999999999996</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/familyName"/>
+          <entity2 rdf:resource="https://schema.org/name"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.25</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/givenName"/>
+          <entity2 rdf:resource="https://schema.org/name"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.25</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://purl.org/dc/terms/identifier"/>
+          <entity2 rdf:resource="https://schema.org/identifier"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/birthDate"/>
+          <entity2 rdf:resource="https://schema.org/birthDate"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.33333333333333326</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.w3.org/ns/person#placeOfBirth"/>
+          <entity2 rdf:resource="https://schema.org/birthPlace"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.46666666666666656</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/familyName"/>
+          <entity2 rdf:resource="https://schema.org/documentation"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/deathDate"/>
+          <entity2 rdf:resource="https://schema.org/deathDate"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8333333333333333</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/familyName"/>
+          <entity2 rdf:resource="https://schema.org/familyName"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.19999999999999996</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/gender"/>
+          <entity2 rdf:resource="https://schema.org/genre"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/birthDate"/>
+          <entity2 rdf:resource="https://schema.org/deathDate"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.w3.org/ns/person#placeOfDeath"/>
+          <entity2 rdf:resource="https://schema.org/deathPlace"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.375</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+          <entity2 rdf:resource="https://schema.org/name"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://data.europa.eu/m8g/deathDate"/>
+          <entity2 rdf:resource="https://schema.org/birthDate"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://www.w3.org/ns/person#countryOfBirth"/>
+          <entity2 rdf:resource="https://schema.org/birthPlace"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.46666666666666656</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="http://purl.org/dc/terms/citizenship"/>
+          <entity2 rdf:resource="https://schema.org/nationality"/>
+        <relation>http://www.w3.org/2002/07/owl#equivalentProperty</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>

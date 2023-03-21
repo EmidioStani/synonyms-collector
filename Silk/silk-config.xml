@@ -1,0 +1,111 @@
+<Silk>
+        <Prefixes>
+      <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/><Prefix id="skosxl" namespace="http://www.w3.org/2008/05/skos-xl#"/><Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/><Prefix id="skos" namespace="http://www.w3.org/2004/02/skos/core#"/><Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/><Prefix id="xsd" namespace="http://www.w3.org/2001/XMLSchema#"/>
+    </Prefixes>
+        <DataSources>
+          <Dataset id="business-synonyms" type="file" uriProperty=""><MetaData>
+        <Label></Label>
+        <Description xml:space="preserve"><![CDATA[]]></Description>
+        
+        
+        
+        
+      </MetaData>
+            <Param name="zipFileRegex" xml:space="preserve"><![CDATA[.*]]></Param><Param name="format" xml:space="preserve"><![CDATA[Turtle]]></Param><Param name="file" xml:space="preserve"><![CDATA[business-synonyms.ttl]]></Param><Param name="graph" xml:space="preserve"><![CDATA[]]></Param><Param name="entityList" xml:space="preserve"><![CDATA[]]></Param>
+          </Dataset><Dataset id="schema" type="file" uriProperty=""><MetaData>
+        <Label></Label>
+        <Description xml:space="preserve"><![CDATA[]]></Description>
+        
+        
+        
+        
+      </MetaData>
+            <Param name="zipFileRegex" xml:space="preserve"><![CDATA[.*]]></Param><Param name="format" xml:space="preserve"><![CDATA[]]></Param><Param name="file" xml:space="preserve"><![CDATA[schemaorg-current-https.ttl]]></Param><Param name="graph" xml:space="preserve"><![CDATA[]]></Param><Param name="entityList" xml:space="preserve"><![CDATA[]]></Param>
+          </Dataset>
+        </DataSources>
+        <Interlinks>
+          <Interlink id="links" linkLimit="1000000" matchingExecutionTimeout="3600"><MetaData>
+        <Label></Label>
+        <Description xml:space="preserve"><![CDATA[]]></Description>
+        <Modified>2023-02-28T08:19:53.401Z</Modified>
+        <Created>2023-01-26T17:22:34.499Z</Created>
+        
+        
+      </MetaData>
+        <SourceDataset dataSource="business-synonyms" var="a" typeUri="">
+        <RestrictTo xml:space="preserve">
+          {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2002/07/owl#ObjectProperty&gt;} UNION  {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2002/07/owl#DatatypeProperty&gt;} UNION  {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#Property&gt;} .
+        </RestrictTo>
+      </SourceDataset>
+        <TargetDataset dataSource="schema" var="b" typeUri="">
+        <RestrictTo xml:space="preserve">
+          {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2002/07/owl#ObjectProperty&gt;} UNION  {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/2002/07/owl#DatatypeProperty&gt;} UNION  {?a &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#Property&gt;} .
+        </RestrictTo>
+      </TargetDataset>
+        <LinkageRule linkType="&lt;http://www.w3.org/2002/07/owl#equivalentProperty&gt;">
+        <Aggregate id="average1" weight="1" type="average">
+            <Compare id="qGrams1" weight="4" metric="qGrams" threshold="0.6" indexing="true">
+            <TransformInput id="removeStopwords3" function="removeStopwords">
+        <TransformInput id="lowerCase4" function="lowerCase">
+        <Input id="sourcePath2" path="&lt;http://www.w3.org/2004/02/skos/core#altLabel&gt;"/>
+        
+      </TransformInput>
+        <Param name="stopwordList" xml:space="preserve"><![CDATA[stopwords.txt]]></Param><Param name="separator" xml:space="preserve"><![CDATA[[\s-]+]]></Param>
+      </TransformInput><TransformInput id="concatMultiValues2" function="concatMultiValues">
+        <TransformInput id="removeStopwords4" function="removeStopwords">
+        <TransformInput id="lowerCase3" function="lowerCase">
+        <TransformInput id="camelcasetokenizer2" function="camelcasetokenizer">
+        <Input id="targetPath2" path="&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;"/>
+        
+      </TransformInput>
+        
+      </TransformInput>
+        <Param name="stopwordList" xml:space="preserve"><![CDATA[alignment]]></Param><Param name="separator" xml:space="preserve"><![CDATA[[\s-]+]]></Param>
+      </TransformInput>
+        <Param name="glue" xml:space="preserve"><![CDATA[ ]]></Param><Param name="removeDuplicates" xml:space="preserve"><![CDATA[false]]></Param>
+      </TransformInput><Param name="q" xml:space="preserve"><![CDATA[2]]></Param><Param name="minChar" xml:space="preserve"><![CDATA[0]]></Param><Param name="maxChar" xml:space="preserve"><![CDATA[z]]></Param>
+          </Compare><Compare id="qGrams2" weight="6" metric="qGrams" threshold="0.6" indexing="true">
+            <TransformInput id="removeStopwords2" function="removeStopwords">
+        <TransformInput id="lowerCase2" function="lowerCase">
+        <Input id="sourcePath1" path="&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;"/>
+        
+      </TransformInput>
+        <Param name="stopwordList" xml:space="preserve"><![CDATA[stopwords.txt]]></Param><Param name="separator" xml:space="preserve"><![CDATA[[\s-]+]]></Param>
+      </TransformInput><TransformInput id="concatMultiValues1" function="concatMultiValues">
+        <TransformInput id="removeStopwords1" function="removeStopwords">
+        <TransformInput id="lowerCase1" function="lowerCase">
+        <TransformInput id="camelcasetokenizer1" function="camelcasetokenizer">
+        <Input id="targetPath1" path="&lt;http://www.w3.org/2000/01/rdf-schema#label&gt;"/>
+        
+      </TransformInput>
+        
+      </TransformInput>
+        <Param name="stopwordList" xml:space="preserve"><![CDATA[stopwords.txt]]></Param><Param name="separator" xml:space="preserve"><![CDATA[[\s-]+]]></Param>
+      </TransformInput>
+        <Param name="glue" xml:space="preserve"><![CDATA[ ]]></Param><Param name="removeDuplicates" xml:space="preserve"><![CDATA[false]]></Param>
+      </TransformInput><Param name="q" xml:space="preserve"><![CDATA[2]]></Param><Param name="minChar" xml:space="preserve"><![CDATA[0]]></Param><Param name="maxChar" xml:space="preserve"><![CDATA[z]]></Param>
+          </Compare>
+          </Aggregate>
+        <Filter/>
+      </LinkageRule>
+        <Outputs>
+          <Output id="aligment"></Output>
+        </Outputs>
+      </Interlink>
+        </Interlinks>
+        <Transforms>
+          
+        </Transforms>
+        <Outputs>
+          <Dataset id="aligment" type="alignment" uriProperty=""><MetaData>
+        <Label></Label>
+        <Description xml:space="preserve"><![CDATA[]]></Description>
+        
+        
+        
+        
+      </MetaData>
+            <Param name="file" xml:space="preserve"><![CDATA[alignment]]></Param>
+          </Dataset>
+        </Outputs>
+      </Silk>
