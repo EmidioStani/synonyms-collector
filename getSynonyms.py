@@ -228,6 +228,7 @@ with tqdm(total=length) as pbar:
                 mylist.append([str(label),"Altervista"])
 
         repository_list = config['input']['repository']
+        '''
         for repository in repository_list:
             pbar.set_description("Searching " + c + " in " + repository['name'])
             if (repository['name'] == "Lov"):
@@ -239,6 +240,7 @@ with tqdm(total=length) as pbar:
                     # wiktionary and wordnet use _ to separate words
                     label = label.replace("_"," ")
                     mylist.append([str(label),repository['name']])
+        '''
         if len(mylist) == 0:
             mylist.append([c,"origin"])   
         for element in mylist:

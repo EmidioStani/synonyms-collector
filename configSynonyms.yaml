@@ -1,6 +1,6 @@
 input:
   file: 
-    name: "core-public-organisation-ap.ttl"
+    name: "cccev.ttl"
     format: "ttl"
   repository:
     - name: "Wordnet"
